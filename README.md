@@ -80,7 +80,7 @@
 4- `code .`
 
 5- To install dependencies navigate to the root folder then use
-`npm run intall_things`
+`npm run install_things`
 
 6- To start backend_Server run the command in separate terminal 
 `npm run start_be`
