@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "installfe":"cd backend && npm i && cd ..",
-    "installbe":"cd frontend && npm i && cd ..",
-    "install_things":"npm run installfe && npm run installbe",
+    "installfe": "cd backend && npm i && cd ..",
+    "installbe": "cd frontend && npm i && cd ..",
+    "install_things": "npm run installfe && npm run installbe",
     "start_fe": "cd frontend && npm start && cd ..",
     "start_be": "cd backend && npm start && cd .."
   },
@@ -22,9 +22,5 @@
     "url": "https://github.com/Koshur1504/loop-illusionist-8901/issues"
   },
   "homepage": "https://github.com/Koshur1504/loop-illusionist-8901#readme",
-  "devDependencies": {
-    "prettier": "3.2.5"
-  },
-  "dependencies": {
-  }
+  "dependencies": {}
 }
