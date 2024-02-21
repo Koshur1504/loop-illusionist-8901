@@ -66,7 +66,7 @@
 
 ## How to clone the repo
 
-## **Ensure you are using node version 21.6.3**
+## **Ensure you are using node version 21.6.2**
 
 ## **Ensure you are formatting the code before commiting**
 
