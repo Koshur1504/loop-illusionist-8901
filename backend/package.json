@@ -2,10 +2,10 @@
   "name": "loop-illusionist-8901",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "json-server --watch db.json --port 4000 -m ./node_modules/json-server-auth"
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
