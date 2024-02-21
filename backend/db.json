@@ -5972,6 +5972,13 @@
       "name": "user",
       "role": "admin",
       "id": 3
+    },
+    {
+      "email": "abcdjaj@mail.com",
+      "password": "$2a$10$QWscW7H8FMxT524LzjCX8.pN1u5T7HFI6uHBmyos.nf831gybDLUi",
+      "name": "user",
+      "role": "admin",
+      "id": 4
     }
   ]
 }
