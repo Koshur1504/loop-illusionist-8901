@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./login.css">
+</head>
+
+<body>
+  <!---------------------- Navbar ------------------------>
+  <div class="top">
+    <div class="logo">
+      <img src="logo.jpeg" alt="">
+    </div>
+    <div class="contact"><span>Need assistance?</span><span>1-866-434-3169 |</span><span><a href="#">Live Chat</a></span></div>
+  </div>
+  <!---------------------- Container ------------------------>
+  <div id="customAlert" class="myCustomAlert">
+    <p>Log-In Successful </p>
+  </div>
+  <div class="container">
+    <!------------ signIn ------------->
+    <div id="signin">
+      <h4>SIGN IN TO MY ACCOUNT</h4>
+      <form id="signInForm" action="./index.html">
+        <input type="email" name="email" id="login-email" placeholder="email" required>
+        <input type="password" name="password" id="login-password" placeholder="password" required>
+        <div class="forgot-password">
+          <a href="#">Forgot your password?</a>
+        </div>
+        <button id="signInBtn">SIGN IN</button>
+      </form>
+    </div>
+
+    <!------------ signUp ------------->
+    <div id="signup">
+      <h4>CREATE AN ACCOUNT</h4>
+      <p>Creating an account enables you to:</p>
+      <ul>
+        <li>Check out faster</li>
+        <li>Keep track of your orders</li>
+        <li>Add favorite items to your wishlist</li>
+      </ul>
+      <form id="signUpForm">
+        <input type="text" name="name" id="name" placeholder="name" required>
+        <input type="email" name="email-address" id="signup-email" placeholder="email address" required>
+        <input type="password" name="create-password" id="signup-password" placeholder="create a password" required>
+        <input type="password" name="confirm-password" id="confirm-password" placeholder="verify your password"
+          required><br>
+        <div class="privacy-policy">
+          <input type="checkbox" checked>
+          <p>Be the first to know about new arrivals, sales and promotions by submitting your email. You can opt out at
+            any time. <a href="#">privacy policy.</a>
+          </p>
+        </div>
+        <div class="radio-btn">
+          <div>
+            <input type="radio" name="name" id="women">
+            <label for="women">Women</label>
+          </div>
+          <div>
+            <input type="radio" name="name" id="men">
+            <label for="men">Men</label>
+          </div>
+          <div>
+            <input type="radio" name="name" id="both" checked="checked">
+            <label for="both">Both</label>
+          </div>
+        </div>
+        <button id="signUpBtn">AGREE AND CONTINUE</button>
+      </form>
+    </div>
+  </div>
+
+  <!------------ T&C and privacy policy ------------->
+  <p class="tc">By signing in or clicking "Agree and Continue", you agree to our <a href="#">Terms of Service.</a> Please also read our <a href="#">Privacy Policy</a></p>
+
+  <script src="login.js"></script>
+</body>
+
+</html>
