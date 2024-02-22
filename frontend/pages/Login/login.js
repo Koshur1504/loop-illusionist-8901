@@ -1,4 +1,4 @@
-let baseurl = "https://loop-illusionist-8901.onrender.com";
+let baseurl = "http://localhost:4000";
 let signInBtn = document.querySelector("#signInBtn");
 
 signInBtn.addEventListener("click", (e) => {
@@ -12,7 +12,7 @@ async function handleSignin(e) {
       email: "abc@mail.com",
       password: "abcdefghi",
     });
-    let data = await fetch(`${baseurl}/signin`, {
+    let data = await fetch(`${baseurl}/login`, {
       method: "POST",
       headers: {
         "Content-type": "application/json",
