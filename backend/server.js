@@ -8,11 +8,8 @@ const middlewares = jsonServer.defaults();
 server.db = router.db;
 
 // Set up the authentication middleware
-server.use(auth);
-
-// Enable CORS by adding this line
 server.use(cors());
-
+server.use(auth);
 server.use(middlewares);
 server.use(router);
 
