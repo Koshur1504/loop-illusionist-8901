@@ -1,7 +1,9 @@
 let baseurl = "https://loop-illusionist-8901.onrender.com";
-let signInBtn = document.querySelector("#signUpBtn");
+let signInBtn = document.querySelector("#signInBtn");
 
-signInBtn.addEventListener("click", handleSignin);
+signInBtn.addEventListener("click", (e) => {
+  handleSignin(e);
+});
 
 async function handleSignin(e) {
   e.preventDefault();
@@ -20,6 +22,6 @@ async function handleSignin(e) {
     let user = await data.json();
     console.log(user);
   } catch (error) {
-    console.error(error);
+    console.log(error);
   }
 }
