@@ -20,6 +20,6 @@ async function handleSignin(e) {
     let user = await data.json();
     console.log(user);
   } catch (error) {
-    console.error(error.message);
+    console.error(error);
   }
 }
