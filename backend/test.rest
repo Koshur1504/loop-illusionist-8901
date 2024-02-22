@@ -1,1 +1,10 @@
-GET https://loop-illusionist-8901.onrender.com/products
+POST https://localhost:4000/login
+Content-Type: application/json
+
+{
+  "email": "abc@mail.com",
+  "password": "abcdefghi",
+}
+
+###
+GET https://localhost:4000
