@@ -1,0 +1,191 @@
+#logo {
+    height: 40px;
+    width: 45px;
+    margin-left: 60px;
+}
+
+.v-span {
+    margin-left: 750px;
+    font-size: 14px;
+}
+
+.chat {
+    color: black;
+    font-size: 14px;
+    margin-right: 50px;
+}
+
+#Shipping {
+    background-color: black;
+    height: 40px;
+    margin-left: 50px;
+    margin-right: 50px;
+
+}
+
+#Shipping a {
+    color: white;
+    font-size: 14px;
+    font-weight: 550;
+}
+
+#Shipping a:nth-child(1) {
+    margin-left: 400px;
+}
+
+#Shipping a:nth-child(3) {
+    margin-right: 400px;
+}
+
+#shippingForm {
+    margin: 30px 10px 0px 0px;
+}
+
+form {
+    background-color: #fff;
+    padding: 20px;
+}
+
+#selectCountry {
+    height: 45px;
+    margin-bottom: 15px;
+    border: 1px solid #585858;
+}
+
+input {
+    width: 100%;
+    height: 45px;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    border: 1px solid #585858;
+
+}
+
+#flexCheckChecked {
+    border: 1px solid #5a5a5a;
+}
+
+.v-save {
+    display: inline-block;
+}
+
+#inputForm {
+    display: none;
+}
+
+#longBtn {
+    background-color: #000000;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    height: 50px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 8px;
+}
+
+#longBtn:hover {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid rgb(122, 122, 122);
+    font-weight: 600;
+}
+
+.container {
+    width: 90%;
+    height: auto;
+    display: flex;
+}
+
+.container2 {
+    width: 90%;
+    height: auto;
+    margin-top: 45px;
+    /* margin-left: 10px; */
+
+}
+
+#box {
+    width: 330px;
+    height: auto;
+    border: 1px solid #c4c3c3;
+    margin-left: 35px;
+    margin-top: 15px;
+}
+
+#box1 {
+    width: 350px;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.price1 {
+    width: 150px;
+    height: 200px;
+    margin-left: 25px;
+}
+
+.price1 p {
+    font-size: 14px;
+    margin-top: 15px;
+    color: black;
+    font-weight: 550;
+}
+
+.price2 {
+    width: 150px;
+    height: 200px;
+    margin-left: 30px;
+
+}
+
+.price2 p {
+    font-size: 14px;
+    margin-top: 15px;
+    color: black;
+    font-weight: 550;
+}
+
+.v-p1 {
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 14px;
+    color: brown;
+    padding-bottom: 10px;
+}
+
+.pro_image {
+    width: 350px;
+    height: 200px;
+    margin-left: 35px;
+    display: flex;
+    justify-content: space-between;
+}
+
+hr {
+    margin-left: 35px;
+    margin-right: 40px;
+}
+
+.img1 {
+    height: 150px;
+    width: 100px;
+    margin-top: 20px;
+}
+
+.img1>img {
+    height: 150px;
+    width: 100px;
+}
+
+.text1 {
+    height: 200px;
+    width: 220px;
+}
+
+.text1 p {
+    font-size: 14px;
+}
