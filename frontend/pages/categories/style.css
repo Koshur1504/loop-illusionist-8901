@@ -59,5 +59,49 @@ nav {
         align-items: center;
       }
     }
+    > .mid-nav {
+      border: 1px dotted;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      > ul:nth-of-type(1) {
+        display: flex;
+        list-style: none;
+        gap: 40px;
+        > li {
+          > a {
+            color: black;
+            text-decoration: none;
+          }
+        }
+      }
+      > div.logo {
+        > img {
+          height: 100px;
+          aspect-ratio: 1/1;
+          object-fit: contain;
+        }
+      }
+      > div:nth-of-type(2) {
+        display: flex;
+        gap: 10px;
+        > div.search {
+          display: flex;
+          align-items: center;
+          position: relative;
+          > input {
+            height: 100%;
+          }
+          > label {
+            position: absolute;
+            right: 0px;
+            top: 1px;
+            > span {
+              font-size: 18px;
+            }
+          }
+        }
+      }
+    }
   }
 }
