@@ -1,10 +1,9 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="refresh" content="300" />
-    <link rel="shortcut icon" href="assets/logo_with_bg.jpeg" type="image/x-icon">
+    <meta http-equiv="refresh" content="300" /> 
     <title>Document</title>
     <link rel="stylesheet" href="index.css" />
     <link
@@ -24,7 +23,7 @@
             <li class="freeshipping">
               <p class="freeshippingpara">
                 <b class="free">FREE</b>
-                "2-Day Shipping &#62; Returns"
+                "2-Day Shipping & Returns"
               </p>
             </li>
             <li class="countryPreferencelink">
@@ -36,21 +35,23 @@
                 <span class="inr">INR</span>
               </button>
             </li>
-            <li class="dropdown">
+            <div class="dropdown">
               <button class="needhelp">
-                <span class="buttontext">Need Help?</span>
-                <span class="material-symbols-outlined">expand_more</span>
+                <span class="buttontext">Need Help? <span class="material-symbols-outlined" id="arrow">expand_more</span></span>
+                <!-- <span class="material-symbols-outlined" id="arrow">expand_more</span> -->
               </button>
+              
               <div class="dropdown-content">
                 <p class="chat"><b>Chat:</b> Let's Chat!</p>
                 <p class="phone"><b>Phone:</b> (866) 434-3169</p>
                 <p class="textus"><b>Text Us:</b> (888) 490-0329</p>
                 <p class="email"><b>Email:</b> service@fwrd.com</p>
               </div>
-            </li>
+            </div>
 
             <li class="signin">
-              <p>Sign In</p>
+              <a href="pages/login/login.html">Sign In</a>
+
             </li>
           </ul>
         </div>
@@ -58,294 +59,15 @@
         <div class="header2">
           <div class="logocontent">
             <div class="clothing-selector">
-              <a href="#" onclick="showSection('men-content')">Women</a>
-              <a href="./pages/men/men.html">Men</a>
+              <a href="./women.html"  class="womenlink">Women</a>
+              <a href="./pages/men/men.html"  class="menlink" >Men</a>
               <div id="women-clothing" class="clothing-section">
                 <!-- Women's clothing items go here -->
-                <div class="dropdownnav">
-                  <ul class="navbar">
-                    <li class="cat1">
-                      <a href="#">NEW</a>
-                      <div class="content" id="">
-                        <div>
-                          <img
-                            src="https://is4.fwrdassets.com/images/up/2024/February/020224_FW_NAV_BESTSELLERS_1x.jpg"
-                            alt=""
-                            style="
-                              margin-top: 15px;
-                              margin-left: 10px;
-                              width: auto;
-                            "
-                          />
-                        </div>
-                        <div>
-                          <img
-                            src="https://is4.fwrdassets.com/images/up/2024/February/020224_FW_NAV_CALLEDELMAR_1x.jpg"
-                            alt=""
-                            style="
-                              margin-top: 15px;
-                              margin-left: 10px;
-                              width: auto;
-                            "
-                          />
-                        </div>
-                        <div>
-                          <h4>NEW</h4>
-                          <a href="#">New This Week</a>
-                        </div>
-                        <div>
-                          <h4>FWRD PICKS</h4>
-                          <a href="#">Kendell's Picks</a>
-                          <br />
-                          <a href="#">Bestseller </a>
-                          <br />
-                          <a href="#">Exclusive</a>
-                        </div>
-                        <div>
-                          <h4>TRENDING NOW</h4>
-                          <a href="#">Quite Luxary</a>
-                          <br />
-                          <a href="#">Red </a>
-                          <br />
-                          <a href="#">Ballet Flat</a>
-                        </div>
-                        <div>
-                          <h4>EVERYDAY</h4>
-                          <a href="#">Wadrobe Stapples</a>
-                          <br />
-                          <a href="#">Vacation</a>
-                          <br />
-                          <a href="#">Date Night</a>
-                        </div>
-                      </div>
-                    </li>
-
-                    <li class="cat1">
-                      <a href="#">Designer</a>
-                      <div class="content" id="">
-                        <div class="designerimg">
-                          <img
-                            src="https://is4.fwrdassets.com/images/up/2024/January/111624_FW_NAV_designers1_1x_r.jpg"
-                            alt=""
-                            style="
-                              margin-top: 15px;
-                              margin-left: 10px;
-                              width: auto;
-                            "
-                          />
-                        </div>
-                        <div>
-                          <img
-                            src="https://is4.fwrdassets.com/images/up/2024/February/020224_fw_khaite_3xpts_200x279.jpg"
-                            alt=""
-                            style="
-                              margin-top: 15px;
-                              margin-left: 10px;
-                              width: auto;
-                            "
-                          />
-                        </div>
-                        <div>
-                          <h4>FEATURED DESIGNER</h4>
-                          <a href="#">New This Week</a>
-                        </div>
-                        <div>
-                          <h4>FWRD PICKS</h4>
-                          <a href="#">Kendell's Picks</a>
-                          <br />
-                          <a href="#">Bestseller </a>
-                          <br />
-                          <a href="#">Exclusive</a>
-                        </div>
-                        <div>
-                          <h4>TRENDING NOW</h4>
-                          <a href="#">Quite Luxary</a>
-                          <br />
-                          <a href="#">Red </a>
-                          <br />
-                          <a href="#">Ballet Flat</a>
-                        </div>
-                        <div>
-                          <h4>EVERYDAY</h4>
-                          <a href="#">Wadrobe Stapples</a>
-                          <br />
-                          <a href="#">Vacation</a>
-                          <br />
-                          <a href="#">Date Night</a>
-                        </div>
-                      </div>
-                    </li>
-                    <li class="cat1">
-                      <a href="#">CLOTHING</a>
-                    </li>
-                    <li class="cat1">
-                      <a href="#">DRESSES</a>
-                    </li>
-                    <li class="cat1">
-                      <a href="#">SHOES</a>
-                    </li>
-                    <li class="cat1">
-                      <a href="#">BAGS</a>
-                    </li>
-                    <li class="cat1">
-                      <a href="#">ACCESORIES</a>
-                    </li>
-                    <li class="cat1">
-                      <a href="#">BEAUTY</a>
-                    </li>
-                    <li class="cat1">
-                      <a href="#">SALE</a>
-                    </li>
-                    <li class="cat1">
-                      <a href="#">SHOPS</a>
-                    </li>
-                    <li class="cat1">
-                      <a href="#">KENDALL'S EDITS</a>
-                    </li>
-                  </ul>
-                </div>
+                 
+               
               </div>
 
-              <!-- <div id="men-clothing" class="clothing-section">
-                <!- Men's clothing items go here -->
-              <!-- <div class="dropdownnav1">
-                  <ul class="navbar">
-                    <li class="cat1">
-                      <a href="#"></a>
-                      <div class="content" id="">
-                        <div>
-                          <img
-                            src="https://is4.fwrdassets.com/images/up/2024/February/020224_FW_NAV_BESTSELLERS_1x.jpg"
-                            alt=""
-                            style="
-                              margin-top: 15px;
-                              margin-left: 10px;
-                              width: auto;
-                            "
-                          />
-                        </div>
-                        <div>
-                          <img
-                            src="https://is4.fwrdassets.com/images/up/2024/February/020224_FW_NAV_CALLEDELMAR_1x.jpg"
-                            alt=""
-                            style="
-                              margin-top: 15px;
-                              margin-left: 10px;
-                              width: auto;
-                            "
-                          />
-                        </div>
-                        <div>
-                          <h4>NEW</h4>
-                          <a href="#">New This Week</a>
-                        </div>
-                        <div>
-                          <h4>FWRD PICKS</h4>
-                          <a href="#">Kendell's Picks</a>
-                          <br />
-                          <a href="#">Bestseller </a>
-                          <br />
-                          <a href="#">Exclusive</a>
-                        </div>
-                        <div>
-                          <h4>TRENDING NOW</h4>
-                          <a href="#">Quite Luxary</a>
-                          <br />
-                          <a href="#">Red </a>
-                          <br />
-                          <a href="#">Ballet Flat</a>
-                        </div>
-                        <div>
-                          <h4>EVERYDAY</h4>
-                          <a href="#">Wadrobe Stapples</a>
-                          <br />
-                          <a href="#">Vacation</a>
-                          <br />
-                          <a href="#">Date Night</a>
-                        </div>
-                      </div>
-                    </li>
-
-                    <li class="cat1">
-                      <a href="#">Designer</a>
-                      <div class="content" id="">
-                        <div class="designerimg">
-                          <img
-                            src="https://is4.fwrdassets.com/images/up/2024/January/111624_FW_NAV_designers1_1x_r.jpg"
-                            alt=""
-                            style="
-                              margin-top: 15px;
-                              margin-left: 10px;
-                              width: auto;
-                            "
-                          />
-                        </div>
-                        <div>
-                          <img
-                            src="https://is4.fwrdassets.com/images/up/2024/February/020224_fw_khaite_3xpts_200x279.jpg"
-                            alt=""
-                            style="
-                              margin-top: 15px;
-                              margin-left: 10px;
-                              width: auto;
-                            "
-                          />
-                        </div>
-                        <div>
-                          <h4>FEATURED DESIGNER</h4>
-                          <a href="#">New This Week</a>
-                        </div>
-                        <div>
-                          <h4>FWRD PICKS</h4>
-                          <a href="#">Kendell's Picks</a>
-                          <br />
-                          <a href="#">Bestseller </a>
-                          <br />
-                          <a href="#">Exclusive</a>
-                        </div>
-                        <div>
-                          <h4>TRENDING NOW</h4>
-                          <a href="#">Quite Luxary</a>
-                          <br />
-                          <a href="#">Red </a>
-                          <br />
-                          <a href="#">Ballet Flat</a>
-                        </div>
-                        <div>
-                          <h4>EVERYDAY</h4>
-                          <a href="#">Wadrobe Stapples</a>
-                          <br />
-                          <a href="#">Vacation</a>
-                          <br />
-                          <a href="#">Date Night</a>
-                        </div>
-                      </div>
-                    </li>
-                    <li class="cat1">
-                      <a href="#">NEW</a>
-                    </li>
-                    <li class="cat1">
-                      <a href="#">NEW</a>
-                    </li>
-                    <li class="cat1">
-                      <a href="#">NEW</a>
-                    </li>
-                    <li class="cat1">
-                      <a href="#">NEW</a>
-                    </li>
-                    <li class="cat1">
-                      <a href="#">NEW</a>
-                    </li>
-                    <li class="cat1">
-                      <a href="#">NEW</a>
-                    </li>
-                    <li class="cat1">
-                      <a href="#">NEW</a>
-                    </li>
-                  </ul>
-                </div> -->
-
-              <!-- </div>  -->
+              
             </div>
             <!-- main -->
             <div class="logo"></div>
@@ -367,19 +89,21 @@
             </div>
           </div>
         </div>
+        <!-- dropdown secon start -->
         <div class="dropdownnav">
           <ul class="navbar">
+            <!-- New section start -->
             <li class="cat1">
               <a href="#">NEW</a>
               <div class="content" id="contentnew">
-                <div>
+                <div id="navimag">
                   <img
                     src="https://is4.fwrdassets.com/images/up/2024/February/020224_FW_NAV_BESTSELLERS_1x.jpg"
                     alt=""
                     style="margin-top: 15px; margin-left: 10px; width: auto"
                   />
-                </div>
-                <div>
+                </div  >
+                <div id="navimag">
                   <img
                     src="https://is4.fwrdassets.com/images/up/2024/February/020224_FW_NAV_CALLEDELMAR_1x.jpg"
                     alt=""
@@ -416,92 +140,687 @@
                 </div>
               </div>
             </li>
-
-            <li class="cat1">
-              <a href="#">Designer</a>
-              <div class="content" id="contentdesigner">
-                <div class="designerimg">
+    <!--New section end-----------------  -->
+    <!-- Designer section start-------------- -->
+            <li class="cat1" >
+              <a href="#">DESIGNERS</a>
+              <div class="content" id="contentdesigner" style="height:400px; ">
+               
+                <div class="designerimg" id="navimag">
                   <img
                     src="https://is4.fwrdassets.com/images/up/2024/January/111624_FW_NAV_designers1_1x_r.jpg"
                     alt=""
                     style="margin-top: 15px; margin-left: 10px; width: auto"
                   />
                 </div>
-                <div>
+                <div id="navimag">
                   <img
                     src="https://is4.fwrdassets.com/images/up/2024/February/020224_fw_khaite_3xpts_200x279.jpg"
                     alt=""
                     style="margin-top: 15px; margin-left: 10px; width: auto"
                   />
+                  <div class="designeralapahets" style="width: 500pxx; display: flex; height: 50px">
+                  <p style="line-height: 17px;">Earn triple point when you shop<br>KHAITE as a loyalty member!</p>
+                   
                 </div>
-                <div>
+                </div>
+                <div style="line-height: 25px; ">
                   <h4>FEATURED DESIGNER</h4>
-                  <a href="#">New This Week</a>
+                  <a href="#">Acne Studios</a>
+                  <br>
+                  <a href="#">Alaia</a>
+                  <br>
+                  <a href="#">Balenciaga</a>
+                  <br>
+                  <a href="#">Bode</a>
+                  <br>
+                  <a href="#">Bottega Veneta</a>
+                  <br>
+                  <a href="#">Burberry</a>
+                  <br>
+                  <a href="#">Chole</a>
+                  <br>
+                  <a href="#">Ferragamo</a>
+                  <br>
+                  <a href="#">Gabriela Heart</a>
                 </div>
-                <div>
-                  <h4>FWRD PICKS</h4>
-                  <a href="#">Kendell's Picks</a>
+                <div style="margin-top: 65px; line-height: 25px;">
+                 
+                  <a href="#">Givenchy</a>
                   <br />
-                  <a href="#">Bestseller </a>
+                  <a href="#">Jacquemus </a>
                   <br />
-                  <a href="#">Exclusive</a>
+                  <a href="#">Jeans Paul Gaultier</a>
+                  <br />
+                  <a href="#">Khaite </a>
+                  <br />
+                 
+                  <a href="#">Loewe</a>
+                  <br />
+                  
+                  <a href="#">Manolo Blachnik</a>
+                  <br />
+                  <a href="#">Miu Miu</a>
+                  <br />
+                  <a href="#">Mugler</a>
+                  <br />
+                  <a href="#">Pre-Owned</a>
+                  <br />
                 </div>
-                <div>
-                  <h4>TRENDING NOW</h4>
-                  <a href="#">Quite Luxary</a>
+                <div style="margin-top: 65px; line-height: 25px;">
+                  
+                  <a href="#">Rick Owens</a>
                   <br />
-                  <a href="#">Red </a>
+                  <a href="#">Saint Laurent</a>
                   <br />
-                  <a href="#">Ballet Flat</a>
+                  <a href="#">Stella McCartney</a>
+                  <br>
+                  <a href="#">The Attico</a>
+                  <br />
+                  <a href="#">The Row</a>
+                  <br />
+                  <a href="#">Tom Ford</a>
+                  <br />
+                  <a href="#">Valentino Garavani</a>
+                  <br />
+                  <a href="#">Versace</a>
+                  <br />
+                  <a href="#">Wardrobe NYC</a>
+                  <br />
                 </div>
-                <div>
-                  <h4>EVERYDAY</h4>
-                  <a href="#">Wadrobe Stapples</a>
-                  <br />
-                  <a href="#">Vacation</a>
-                  <br />
-                  <a href="#">Date Night</a>
                 </div>
-              </div>
+                
+              
+              
+             
             </li>
-            <li class="cat1">
-              <a href="#">CLOTHING</a>
-            </li>
-            <li class="cat1">
-              <a href="#">DRESSES</a>
-            </li>
-            <li class="cat1">
-              <a href="#">SHOES</a>
-            </li>
-            <li class="cat1">
+          
+  <!------------------------ designer section end---------- -->
+  <!-- clothing section start----------- -->
+  <li class="cat1" >
+    <a href="#">CLOTHING</a>
+    <div class="content" id="contentnew" style="height: 400px; width: 70%;">
+      <div id="navimag">
+        <img
+          src="https://is4.fwrdassets.com/images/up/2024/January/111724_FW_NAV_clothing1_1x.jpg"
+          alt=""
+          style="margin-top: 15px; margin-left: 10px; width: auto"
+        />
+      </div>
+      <div id="navimag">
+        <img
+          src="https://is4.fwrdassets.com/images/up/2024/January/111724_FW_NAV_clothing2_1x.jpg"
+          alt=""
+          style="margin-top: 15px; margin-left: 10px; width: auto"
+        />
+      </div>
+      <div style="line-height: 25px; ">
+        <h4>SHOP BY CATEGORY</h4>
+        <a href="#">All clothing</a>
+                  <br>
+                  <a href="#">Dresses</a>
+                  <br>
+                  <a href="#">Tops</a>
+                  <br>
+                  <a href="#">Jackets & Coats</a>
+                  <br>
+                  <a href="#">Jumpsuits & Rompers</a>
+                  <br>
+                  <a href="#">Sweaters & Knits</a>
+                  <br>
+                  <a href="#">Loungewear</a>
+                  <br>
+                  <a href="#">Denim</a>
+      </div>
+      <div style="line-height: 25px;margin-top: 90px;">
+       
+        <a href="#">Pants</a>
+                  <br>
+                  <a href="#">Skirts</a>
+                  <br>
+                  <a href="#">Shorts</a>
+                  <br>
+                  <a href="#">Intimates</a>
+                  <br>
+                  <a href="#">Activewear</a>
+                  <br>
+                  <a href="#">Ski</a>
+                  <br>
+                  <a href="#">Swimwear</a>
+      </div>
+      <div style="line-height: 25px;">
+        <h4>FEATURED BRANDS</h4>
+        <a href="#">Acne Studios</a>
+        <br />
+        <a href="#">Balenciaga</a>
+        <br />
+        <a href="#">Isabel Marant</a>
+        <br />
+        <a href="#">Jacquemus</a>
+        <br />
+        <a href="#">Jeans Paul Gaultier</a>
+        <br />
+        <a href="#">Khaite</a>
+        <br />
+        <a href="#">R13</a>
+        <br />
+        <a href="#">Saint Laurent</a>
+        <br />
+        <a href="#">The Attico</a>
+        <br />
+        <a href="#">Wardrobe NYC</a>
+        <br />
+      </div>
+      <div style="line-height: 25px;">
+        <h4>FEATURED SHOPS</h4>
+        <a href="#">Black Talent</a>
+        <br />
+        <a href="#">Kendell's Edit</a>
+        <br />
+        <a href="#">The Ski Shop</a>
+        <br />
+        <a href="#">The Spring Shop</a>
+        <br />
+        <a href="#">The Vacation Shop</a>
+        <br />
+        <a href="#">Everyday Fashion Formulas</a>
+        <br />
+        <a href="#">FWRD Renew</a>
+        <br />
+        <a href="#">The Wedding Shop</a>
+        <br />
+        <a href="#">RSVP in style</a>
+        <br />
+        <a href="#">Editor's Picks</a>
+        <br />
+      </div>
+    </div>
+  </li>
+  <!-- -----------clothing section ends------- -->
+  <!-- dresses section start--------------- -->
+  <li class="cat1" >
+    <a href="#">DRESSES</a>
+    <div class="content" id="contentdesigner" style="height:400px;  width: 60%; margin-left: 20px;">
+      <div id="navimag">
+        <img
+          src="https://is4.fwrdassets.com/images/up/2024/January/111724_FW_NAV_dresses_1x.jpg"
+          alt=""
+          style="margin-top: 15px; margin-left: 10px; width: auto"
+        />
+        <div class="designeralapahets" style=" width: 250px; display: flex; height: 50px; margin-left: 10px;">
+        <p style="line-height: 17px;">Get dressed up with our chicest assortment of covetable minis, midis & maxis</p>
+         
+      </div>
+      </div>
+      <div style="line-height: 25px; width: 200px;">
+        <h4>SHOP BY CATEGORIES</h4>
+        <a href="#">All Dresses</a>
+        <br>
+        <a href="#">Asymmetrical</a>
+        <br>
+        <a href="#">Black</a>
+        <br>
+        <a href="#">Cocktail</a>
+        <br>
+        <a href="#">Denim</a>
+        <br>
+        <a href="#">Embelished & Sequined</a>
+        <br>
+        <a href="#">Gowns</a>
+        <br>
+        <a href="#">Lace</a>
+        
+      </div>
+      <div style="margin-top: 65px; line-height: 25px; margin-left: 20px; width: 150px;">
+       
+        <a href="#">Leather</a>
+        <br />
+        <a href="#">Long Sleeve </a>
+        <br />
+        <a href="#">Maxi</a>
+        <br />
+        <a href="#">Midi</a>
+        <br />
+       
+        <a href="#">Mini</a>
+        <br />
+        
+        <a href="#">Off Duty</a>
+        <br />
+        <a href="#">Off The Shoulder</a>
+        <br />
+        <a href="#">One Shoulder</a>
+       
+      </div>
+      <div style="margin-top: 65px; line-height: 25px; margin-left: 20px; width: 150px;">
+        
+        <a href="#">Printed</a>
+        <br />
+        <a href="#">Sleeveless</a>
+        <br />
+        <a href="#">Slip Dress</a>
+        <br>
+        <a href="#">Stapless</a>
+        <br />
+        <a href="#">Sweater Dresses</a>
+        <br />
+        <a href="#">Tank</a>
+        <br />
+        <a href="#">White</a>
+        <br />
+        <a href="#">Wrap</a>
+        
+      </div>
+      </div>
+      
+    
+    
+   
+  </li>
+  <!---------dresses section ends--------  -->
+           
+  <!-- shoes section start----------------- -->
+  <li class="cat1" >
+    <a href="#">SHOES</a>
+    <div class="content" id="contentdesigner" style="height:400px;  right: 280px; width: 900px;" >
+     
+      <div class="designerimg" id="navimag">
+        <img
+          src="https://is4.fwrdassets.com/images/up/2024/January/111724_FW_NAV_shoes_1x.jpg"
+          alt=""
+          style="margin-top: 15px; margin-left: 10px; width: auto"
+        />
+      </div>
+      <div id="navimag">
+        <img
+          src="https://is4.fwrdassets.com/images/up/2024/January/111724_FW_NAV_shoes2_1x.jpg"
+          alt=""
+          style="margin-top: 15px; margin-left: 10px; width: auto"
+        />
+        
+      </div>
+      <div style="line-height: 25px; width: 200px;">
+        <h4>SHOP BY CATEGORY</h4>
+        <a href="#">All Shoes</a>
+        <br>
+        <a href="#">Heels</a>
+        <br>
+        <a href="#">Sneaker</a>
+        <br>
+        <a href="#">Flats</a>
+        <br>
+        <a href="#">Booties</a>
+        <br>
+        <a href="#">Boots</a>
+        <br>
+        <a href="#">Sandals</a>
+        <br>
+        <a href="#">Wedges</a>
+        
+      </div>
+      <div style=" line-height: 25px; width: 200px;">
+        <h4>FEATURED BRANDS</h4>
+        <a href="#">Amina Muaddi</a>
+        <br />
+        <a href="#">Balenciaga </a>
+        <br />
+        <a href="#">Bottega Veneta</a>
+        <br />
+        <a href="#">Gia Borghini</a>
+        <br />
+       
+        <a href="#">Manolo Blachnik</a>
+        <br />
+        
+        <a href="#">Saint Laurent</a>
+        <br />
+        <a href="#">The Row</a>
+        <br />
+        <a href="#">Valentino Garavani</a>
+        
+      </div>
+     
+      </div>
+      
+    
+    
+   
+  </li>
+            <!-- shoes section ends -->
+            <!-- bags start -->
+            <li class="cat1" >
               <a href="#">BAGS</a>
+              <div class="content" id="contentdesigner" style="height:400px;  right: 280px; width: 900px;" >
+               
+                <div class="designerimg" id="navimag">
+                  <img
+                    src="https://is4.fwrdassets.com/images/up/2024/January/111724_FW_NAV_Bags1_1x.jpg"
+                    alt=""
+                    style="margin-top: 15px; margin-left: 10px; width: auto"
+                  />
+                </div>
+                <div id="navimag">
+                  <img
+                    src="https://is4.fwrdassets.com/images/up/2024/January/111724_FW_NAV_Bags2_1x.jpg"
+                    alt=""
+                    style="margin-top: 15px; margin-left: 10px; width: auto"
+                  />
+                  <div class="designeralapahets" style=" width: 500pxx; display: flex; height: 50px">
+                    <p style="line-height: 17px;">Timeless design lines on with our collection of pre-owned designer pieces.</p>
+                     
+                  </div>
+                  
+                </div>
+                <div style="line-height: 25px; width: 200px;">
+                  <h4>SHOP BY CATEGORY</h4>
+                  <a href="#">All Bags</a>
+                  <br>
+                  <a href="#">Clutches</a>
+                  <br>
+                  <a href="#">Crossbody Bags</a>
+                  <br>
+                  <a href="#">Mini Bags</a>
+                  <br>
+                  <a href="#">Pre-Owned</a>
+                  <br>
+                  <a href="#">Shoulder Bags</a>
+                  <br>
+                  <a href="#">Totes</a>
+                  <br>
+                  <a href="#">Wallets</a>
+                  
+                </div>
+                <div style=" line-height: 25px; width: 200px;">
+                  <h4>FEATURED BRANDS</h4>
+                  <a href="#">Alaia</a>
+                  <br />
+                  <a href="#">Balenciaga </a>
+                  <br />
+                  <a href="#">Bottega Veneta</a>
+                  <br />
+                  <a href="#">Chole</a>
+                  <br />
+                 
+                  <a href="#">Givenchy</a>
+                  <br />
+                  
+                  <a href="#">Jacquemus</a>
+                  <br />
+                  <a href="#">Loewe</a>
+                  <br />
+                  <a href="#">Saint Laurent</a>
+                  <br />
+                  <a href="#">The Row</a>
+                  <br />
+                  <a href="#">Valentino Garavani</a>
+                  <br />
+                  
+                </div>
+               
+                </div>
+                
+              
+              
+             
             </li>
-            <li class="cat1">
+            <!-- bags end -->
+            <!-- accessories start -->
+            <li class="cat1" >
               <a href="#">ACCESORIES</a>
+              <div class="content" id="contentdesigner" style="height:400px;  width: 45%; margin-left: 20px; right: 20%;">
+                <div id="navimag">
+                  <img
+                    src="https://is4.fwrdassets.com/images/up/2024/January/111724_FW_NAV_accessories_1x.jpg"
+                    alt=""
+                    style="margin-top: 15px; margin-left: 10px; width: auto"
+                  />
+                 
+                </div>
+                <div style="line-height: 25px; width: 200px;">
+                  <h4>SHOP BY CATEGORY</h4>
+                  <a href="#">All Accesories</a>
+                  <br>
+                  <a href="#">Bags</a>
+                  <br>
+                  <a href="#">Beauty</a>
+                  <br>
+                  <a href="#">Jewellery</a>
+                  <br>
+                  <a href="#">Belts</a>
+                  <br>
+                  <a href="#">Hats</a>
+                  <br>
+                  <a href="#">Home</a>
+                  <br>
+                  <a href="#">Gift</a>
+                  <br>
+                  <a href="#">Gift Certificates</a>
+                  <br>
+                  <a href="#">Sunglasses & Optical</a>
+                  <br>
+                  
+                </div>
+                <div style="line-height: 25px; margin-left: 20px; width: 250px;">
+                  <h4>FEATURED BRANDS</h4>
+                  <a href="#">Balenciaga</a>
+                  <br />
+                  <a href="#">Bottega Veneta</a>
+                  <br />
+                  <a href="#">Fendi</a>
+                  <br />
+                  <a href="#">Givenchy</a>
+                  <br />
+                 
+                  <a href="#">Gucci</a>
+                  <br />
+                  
+                  <a href="#">Saint Laurent</a>
+                  <br />
+                  <a href="#">Tom Ford</a>
+                  <br />
+                  <a href="#">Valentino Garavani</a>
+                 
+                </div>
+               
+                </div>
+                
+              
+              
+             
             </li>
-            <li class="cat1">
+            <!-- accessories end -->
+            <!-- beauty start--- -->
+            <li class="cat1" >
               <a href="#">BEAUTY</a>
+              <div class="content" id="contentdesigner" style="height:400px;  right:2%; width: 900px;" >
+               
+                <div class="designerimg" id="navimag">
+                  <img
+                    src="https://is4.fwrdassets.com/images/up/2024/January/111724_FW_NAV_beauty1_1x.jpg"
+                    alt=""
+                    style="margin-top: 15px; margin-left: 10px; width: auto"
+                  />
+                </div>
+                <div id="navimag">
+                  <img
+                    src="https://is4.fwrdassets.com/images/up/2024/January/122023_FW_NAV_Beauty2_1x.jpg"
+                    alt=""
+                    style="margin-top: 15px; margin-left: 10px; width: auto"
+                  />
+                  
+                </div>
+                <div style="line-height: 25px; width: 200px;">
+                  <h4>SHOP BY CATEGORY</h4>
+                  <a href="#">All Beauty</a>
+                  <br>
+                  <a href="#">Accesories</a>
+                  <br>
+                  <a href="#">Bath & Body</a>
+                  <br>
+                  <a href="#">Fragrance</a>
+                  <br>
+                  <a href="#">Hair</a>
+                  <br>
+                  <a href="#">Makeup</a>
+                  <br>
+                  <a href="#">Skincare</a>
+                  <br>
+                  <a href="#">Tools & Beauty Sets</a>
+                  <br>
+                  <a href="#">Wellness</a>
+                  
+                </div>
+                <div style=" line-height: 25px; width: 200px;">
+                  <h4>FEATURED BRANDS</h4>
+                  <a href="#">111Skin</a>
+                  <br />
+                  <a href="#">Anastasia Beverly Hills</a>
+                  <br />
+                  <a href="#">Augustinus Badar</a>
+                  <br />
+                  <a href="#">Charlotte Tilbury</a>
+                  <br />
+                 
+                  <a href="#">Frederic Malle</a>
+                  <br />
+                  
+                  <a href="#">Oribe</a>
+                  <br />
+                  <a href="#">RETROUVE</a>
+                  <br />
+                  <a href="#">Santa Maria Novella</a>
+                  <br />
+                  <a href="#">SK-II</a>
+                  <br />
+                  <a href="#">Trudon</a>
+                  
+                </div>
+                
+                </div>
+                
+              
+              
+             
             </li>
+            <!-- beauty ends--- -->
+            <!-- sale start   -->
             <li class="cat1">
               <a href="#">SALE</a>
             </li>
-            <li class="cat1">
+            <!-- sale ends-- -->
+            <!-- shops start  -->
+            <li class="cat1" >
               <a href="#">SHOPS</a>
+              <div class="content" id="contentdesigner" style="height:400px;  right:2%; width: 900px;" >
+               
+                <div class="designerimg" id="navimag">
+                  <img
+                    src="https://is4.fwrdassets.com/images/up/2024/January/020124_FW_NAV_Shops1_1x_r.jpg"
+                    alt=""
+                    style="margin-top: 15px; margin-left: 10px; width: auto"
+                  />
+                </div>
+                <div id="navimag">
+                  <img
+                    src="https://is4.fwrdassets.com/images/up/2024/January/111624_FW_NAV_Shop2_1x.jpg"
+                    alt=""
+                    style="margin-top: 15px; margin-left: 10px; width: auto"
+                  />
+                  
+                </div>
+                <div style="line-height: 25px; width: 200px;">
+                  <h4>SHOP BY TREND</h4>
+                  <a href="#">Winter Weddding Season</a>
+                  <br>
+                  <a href="#">Matching Sets</a>
+                  <br>
+                  <a href="#">Everday Fashion Formulas</a>
+                  <br>
+                  <a href="#">Leather</a>
+                  <br>
+                  <a href="#">Precious Cargo</a>
+                  
+                  
+                </div>
+                <div style=" line-height: 25px; width: 200px;">
+                  <h4>FEATURED SHOPS</h4>
+                  <a href="#">Black Talent</a>
+                  <br />
+                  <a href="#">The Aspen Pop-up Edit</a>
+                  <br />
+                  <a href="#">Kendell's Edits</a>
+                  <br />
+                  <a href="#">The Spring Shop</a>
+                  <br />
+                 
+                  <a href="#">Special Occassion Shop</a>
+                  <br />
+                  
+                  <a href="#">Ski Shop</a>
+                  <br />
+                  <a href="#">Vacation Shop</a>
+                  <br />
+                  <a href="#">FWRD Renew</a>
+                  <br />
+                  <a href="#">The Modern Bride</a>
+                  <br />
+                  <a href="#">RSVP in Style</a>
+                  <br />
+                  <a href="#">Editor's Picks</a>
+                  
+                </div>
+                
+                </div> 
             </li>
-            <li class="cat1">
+            <!-- shops ends -->
+            <!-- kendell start -->
+            <li class="cat1" >
               <a href="#">KENDELL'S EDITS</a>
+              <div class="content" id="contentdesigner" style="height:350px;  right:2%; width: 700px;" >
+               
+                <div class="designerimg" id="navimag">
+                  <img
+                    src="https://is4.fwrdassets.com/images/up/2023/December/010124_f_shops_Kendallsedit_1x.jpg"
+                    alt=""
+                    style="margin-top: 15px; margin-left: 10px; width: auto"
+                  />
+                </div>
+                <div id="navimag">
+                  <img
+                    src="https://is4.fwrdassets.com/images/up/2023/December/010124_f_shops_aspen_1x.jpg"
+                    alt=""
+                    style="margin-top: 15px; margin-left: 10px; width: auto"
+                  />
+                  
+                </div>
+                
+                <div id="navimag">
+                  <img
+                    src="https://is4.fwrdassets.com/images/up/2023/December/010124_f_shops_Thelooks_1x.jpg"
+                    alt=""
+                    style="margin-top: 15px; margin-left: 10px; width: auto"
+                  />
+                  
+                </div>
+                
+                </div> 
             </li>
+            <!-- kendel ends -->
           </ul>
         </div>
       </div>
+<!-- dropdown second end -->
 
+<!-- black section start -->
       <div class="blacksection">
         <div class="newarrivalsection">
-          <span class="new">NEW</span> Take a look at what's new this week
+          <span class="new">NEW</span> Take a look at what's new this
+          week
           <a class="shoplink1" href="#" style="color: white">SHOP NOW</a>
         </div>
       </div>
-
+<!-- black section ends -->
+<!-- groupimages1 start -->
       <div class="groupimages1">
         <div>
           <img
@@ -532,252 +851,256 @@
           />
         </div>
       </div>
-      <div class="groupimage2">
+      <!-- group images -->
+       <!-- image grid 6 images -->
+       <div class="groupimage2">
         <div>
-          <div class="card" style="width: 18rem">
-            <img
-              src="https://is4.fwrdassets.com/images/up/2024/February/021924_f_setthemood_2x.jpg"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+          <div class="card" id="gridcards" style="width: 18rem;">
+            <img src="https://is4.fwrdassets.com/images/up/2024/February/021924_f_setthemood_2x.jpg" class="card-img-top" alt="...">
+            <div class="card-body" id="gridcardcontent">
+              <h5 class="card-title">Set the Mood</h5>
+              <p class="card-text">Cue the ambience-this season's looks are giving not-so-subtle hints of sensuality with soft yet powerful femininity</p>
+              
             </div>
           </div>
         </div>
         <div>
-          <div class="card" style="width: 18rem">
-            <img
-              src="https://is4.fwrdassets.com/images/up/2024/February/021924_f_ourfavenydesigners.jpg"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+          <div class="card"  id="gridcards"style="width: 18rem;">
+            <img src="https://is4.fwrdassets.com/images/up/2024/February/021924_f_ourfavenydesigners.jpg" class="card-img-top" alt="...">
+            <div class="card-body" id="gridcardcontent">
+              <h5 class="card-title">Our Favourite New York Designers</h5>
+              <p class="card-text">From Khaite to LaQuan Smith, delve into our roundup of the coolest New York brands leading the way</p>
+              
+            </div>
+          </div>
+          
+        </div>
+        <div>
+          
+          <div class="card" id="gridcards"style="width: 18rem;">
+            <img src="https://is4.fwrdassets.com/images/up/2024/February/021924_f_whattowear.jpg" class="card-img-top" alt="...">
+            <div class="card-body" id="gridcardcontent">
+              <h5 class="card-title">What to wear for the Week Ahead</h5>
+              <p class="card-text">Streamline your week by planning your 7-day outfit with our fool-proof formulas for every day of the week</p>
+             
             </div>
           </div>
         </div>
         <div>
-          <div class="card" style="width: 18rem">
-            <img
-              src="https://is4.fwrdassets.com/images/up/2024/February/021924_f_setthemood_2x.jpg"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+          
+          <div class="card" id="gridcards"style="width: 18rem;">
+            <img src="https://is4.fwrdassets.com/images/up/2024/February/021924_f_newarrivals.jpg" class="card-img-top" alt="...">
+            <div class="card-body" id="gridcardcontent">
+              <h5 class="card-title">New Arrivals</h5>
+              <p class="card-text">Take a look at what's new this week</p>
+             
             </div>
           </div>
         </div>
         <div>
-          <div class="card" style="width: 18rem">
-            <img
-              src="https://is4.fwrdassets.com/images/up/2024/February/021924_f_setthemood_2x.jpg"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+          <div class="card"id="gridcards" style="width: 18rem;">
+            <img src="https://is4.fwrdassets.com/images/up/2024/January/012224_f_fwrdrenew.jpg" class="card-img-top" alt="...">
+            <div class="card-body" id="gridcardcontent">
+              <h5 class="card-title">FWRD Renew</h5>
+              <p class="card-text">Timeless design lives on with our collection of pre-owned designer pieces</p>
+              
             </div>
           </div>
+          
         </div>
         <div>
-          <div class="card" style="width: 18rem">
-            <img
-              src="https://is4.fwrdassets.com/images/up/2024/February/021924_f_setthemood_2x.jpg"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+          <div class="card"id="gridcards" style="width: 18rem;">
+            <img src="https://is4.fwrdassets.com/images/up/2024/February/021924_f_sale.jpg" class="card-img-top" alt="...">
+            <div class="card-body" id="gridcardcontent">
+              <h5 class="card-title">Sale</h5>
+              <p class="card-text">Up to 70% off select designers</p>
+         
             </div>
           </div>
-        </div>
-        <div>
-          <div class="card" style="width: 18rem">
-            <img
-              src="https://is4.fwrdassets.com/images/up/2024/February/021924_f_setthemood_2x.jpg"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
+         
         </div>
       </div>
       <!------------------------ products------------------------- -->
-      <div class="products">
-        <div>
-          <div class="card" style="width: 18rem">
-            <img
-              src="https://is4.fwrdassets.com/images/p/fw/p/MMAR-WZ175_V2.jpg"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
+      <div class="productHeading"><b>FEATURED ITEMS</b></div>
+      <div class="productitems">
+         <div class="productimg1">
+          <div class="shoes">
+             <div class="shoesimg"></div>
+             
+              <div class="shoescontent">
+                <h4>MAISON MARGIELA</h4>
+                <p>Replica Sneaker</p>
+                <p>₹44.886.66</p>
+
+              </div>
           </div>
-        </div>
-        <div>
-          <div class="card" style="width: 18rem">
-            <img
-              src="https://is4.fwrdassets.com/images/p/fw/p/VSAC-WS198_V4.jpg"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
+          <div class="girlfirst">
+            <div class="girlfirstimg"></div>
+             
+              <div class="shoescontent">
+                <h4>VERSACE</h4>
+                <p>Greca Border Bralette Top</p>
+                <p>₹10,390.20</p>
+
+              </div>
           </div>
-        </div>
-        <div>
-          <div class="card" style="width: 18rem">
-            <img
-              src="https://is4.fwrdassets.com/images/p/fw/p/AMUD-WZ138_V2.jpg"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
+          <div class="sandle">
+            <div class="sandleimg"></div>
+             
+              <div class="shoescontent">
+                <h4> AMINA MUADDI</h4>
+                <p> Begum Glass Heel</p>
+                <p>₹100,992.74</p>
+
+              </div>
           </div>
-        </div>
-        <div>
-          <div class="card" style="width: 18rem">
-            <img
-              src="https://is4.fwrdassets.com/images/up/2024/February/021924_f_setthemood_2x.jpg"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
+          <div class="secondgirl">
+            <div class="secondgirlimg"></div>
+             
+              <div class="shoescontent">
+                <h4>ACNE STUDIOS</h4>
+                <p> Meadow Top</p>
+                <p>₹21,611.62</p>
+
+              </div>
           </div>
-        </div>
-        <div>
-          <div class="card" style="width: 18rem">
-            <img
-              src="https://is4.fwrdassets.com/images/up/2024/February/021924_f_setthemood_2x.jpg"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+         </div>
+          <!-- second grid product-->
+          <div class="productimg1">
+            <div class="bag">
+               <div class="bagimg"></div>
+               
+                <div class="shoescontent">
+                  <h4>LOEWE</h4>
+                  <p>Font Tote Small Bag</p>
+                  <p>₹91,433.76</p>
+  
+                </div>
             </div>
-          </div>
-        </div>
-        <div>
-          <div class="card" style="width: 18rem">
-            <img
-              src="https://is4.fwrdassets.com/images/p/fw/p/MMAR-WZ175_V2.jpg"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+            <div class="bag2">
+              <div class="bag2img"></div>
+               
+                <div class="shoescontent">
+                  <h4>LOEWE</h4>
+                  <p> Hammock Hobo Mini Bag</p>
+                  <p>₹141,306.72</p>
+  
+                </div>
             </div>
-          </div>
-        </div>
-        <div>
-          <div class="card" style="width: 18rem">
-            <img
-              src="https://is4.fwrdassets.com/images/up/2024/February/021924_f_setthemood_2x.jpg"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+            <div class="bag3">
+              <div class="bag3img"></div>
+               
+                <div class="shoescontent">
+                  <h4>LOEWE</h4>
+                  <p> Hammock Hobo Mini Bag</p>
+                  <p>₹141,306.72</p>
+  
+                </div>
             </div>
-          </div>
-        </div>
-        <div>
-          <div class="card" style="width: 18rem">
-            <img
-              src="https://is4.fwrdassets.com/images/up/2024/February/021924_f_setthemood_2x.jpg"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+            <div class="bag4">
+              <div class="bag4img"></div>
+               
+                <div class="shoescontent">
+                  <h4>LOEWE</h4>
+                  <p> Anagram Basket Small Bag</p>
+                  <p>₹70,653.36</p>
+  
+                </div>
             </div>
-          </div>
-        </div>
+           </div>
       </div>
+       
       <!-- ------------------------------------------------------------------ -->
       <!-- footer -->
-    </div>
+      <div class="footheading">
+        <div class="headingfoot">
+            <h4>FWRD ON THE GO</h4>
+              <p>Receive 15% OFF your first in-app purchase. iPad App use code: FWRDIPAD15<br>Restrictions may apply.</p>
+        </div>
+        <div class="applestore">
+          <img  class="appleicon"  src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg" alt="">
+        </div>
+      </div>
+      <!-- foot heading2 -->
+      <div class="footheading2">
+        <h3>HELP US IMPROVE</h3>
+        <p>Take a brief survey about today's event</p>
+        <span>Begin Survey.</span>
+      </div>
+      <!-- mainfooter -->
+      <div class="mainfootcontent">
+        <div class="contentfoot">
+          <div>
+            <h4>FWRD</h4>
+            <a href="#">About Us</a>
+            <br>
+            <a href="#">562-407-3230</a>
+            <br>
+            <a href="#"> Customer Care</a>
+            <br>
+            <a href="#">Track Your Order</a>
+            <br>
+            <a href="#">Shipping & Returns</a>
+            <br>
+            <a href="#">Live ChatChat</a>
+            <br>
+            <a href="#">Gift Certificates</a>
+            <br>
+            <a href="#">Accessibility Statement</a>
+          </div>
+          <div class="secondfootrow" style="margin-top: 55px;">
+            <a href="#">Ambassador Program</a>
+            <br>
+            <a href="#">Affiliate</a>
+            <br>
+            <a href="#">Careers</a>
+            <br>
+            <a href="#">Terms</a>
+            <br>
+            <a href="#">Privacy</a>
+            <br>
+            <div class="specialelementfoot">
+            <a href="#">Your Privacy Choices - CA</a> 
+            <div><img class="crosstickimg" src="https://www.solgar.com/wp-content/uploads/2023/11/privacyoptions.svg" alt=""></div>
+            </div>
+            <br>
+            <a href="#">CA Supply Chains</a>
+            <br>
+            <a href="#">Cookie Preferences</a>
+          </div>
+          <div>
+            <h4>NEWSLETTER</h4>
+            <p>Be the first to know about new arrivals, sales & promos by submitting your email. You can opt out at any time.</p>
+            <textarea placeholder="Sign up for our weekly emails"></textarea>
+             
+          </div>
+          <div style="margin-left: 20px;">
+            <h4>JOIN US</h4>
+            <a href="#">Facebook</a>
+            <br>
+            <a href="#">Instagram</a>
+            <br>
+            <a href="#">YouTube</a>
+            <br>
+            <a href="#">Twitter</a>
+            <br>
+            <a href="#">Pinterest</a>
+            
+          </div>
+          <div>
+            <h4>OUR APPS</h4>
+            <a href="#">iPhone</a>
+            <br>
+            <a href="#">iPad</a>
+          </div>
+          <!-- <p>&copy; 2024 Eminent, Inc. (a Revolve Group company). All Rights Reserved</p> -->
+
+        </div>
+        <p class="footcopyright">2024 &copy; Eminent, Inc. (a Revolve Group company). All Rights Reserved</p>
+      </div>
+    <!-- </div> -->
+    <script src="fwrd.js">
+    </script>
   </body>
-  <script src="fwrd.js"></script>
+ 
 </html>
