@@ -9,6 +9,8 @@
     height: 180px;
     border: 1px solid black;
     border:none;
+    
+   
   }
   .uppermostheader {
     width: 100%;
@@ -660,13 +662,13 @@
       margin-left: 65px;
       color: #827f7f;
   }
-  .gridcards{
+  #gridcards{
       transition: filter 0.3s ease;
   }
-  .gridcards:hover{
+  #gridcards:hover{
       filter: brightness(0.7);
   }
-  .gridcardcontent h5{
+  #gridcardcontent h5{
     /* margin-left: 100px; */
     width: 300px;
     border: 1px solid black;
@@ -675,7 +677,7 @@
     transition: filter 0.3s ease;
     border:none;
   }
-  .gridcardcontent p{
+  #gridcardcontent p{
     width: 400px;;
     border: 1px solid black;
     /* margin-left: 10px; */
@@ -687,10 +689,10 @@
     
    
   }
-  .gridcardcontent:hover{
+  #gridcardcontent:hover{
     filter: brightness(0.7);
   }
-  .gridcardcontent{
+  #gridcardcontent{
     transition: filter 0.3s ease;
    
   }

@@ -5,21 +5,20 @@
 } */
 
 .v-container-a {
-    width: 100%;
-    height: 150vh;
-    display: flex;
+  width: 100%;
+  height: 150vh;
+  display: flex;
 }
 
 .v-container1 {
-    width: 60%;
-    height: 95vh;
-    margin-top: 50px;
+  width: 60%;
+  height: 95vh;
+  margin-top: 50px;
 }
 
 .v-img1 {
-    height: 500px;
-    width: 400px;
-    margin-left: 200px;
+  height: 500px;
+  object-fit: contain;
 }
 
 /* 
@@ -30,365 +29,349 @@
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-    border-radius: 50%;
-    background-color: #979696;
+  border-radius: 50%;
+  background-color: #979696;
 }
 
-
-
 #v-btn1 {
-    margin-left: 340px;
-    margin-top: 20px;
+  margin-left: 340px;
+  margin-top: 20px;
 }
 
 .v-container2 {
-    width: 530px;
-    height: 500px;
-    padding-top: 50px;
-    /* border: 1px solid black; */
+  width: 530px;
+  height: 500px;
+  padding-top: 50px;
+  /* border: 1px solid black; */
 }
 
 #v-btn3 {
-    text-decoration: none;
-    color: black;
-    font-size: medium;
-    margin-left: 25px;
+  text-decoration: none;
+  color: black;
+  font-size: medium;
+  margin-left: 25px;
 }
 
 #v-btn3:hover {
-    color: white;
-
+  color: white;
 }
 
 .v-a1 {
-    font-weight: 600;
-    text-decoration: none;
-    color: black;
-
+  font-weight: 600;
+  text-decoration: none;
+  color: black;
 }
 
 .v-a1:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .v-span1 {
-    color: black;
-    margin-right: 20px;
-    font-size: 14px;
-    cursor: pointer;
-    text-decoration: underline;
+  color: black;
+  margin-right: 20px;
+  font-size: 14px;
+  cursor: pointer;
+  text-decoration: underline;
 }
 
 .v-span1:hover {
-    text-decoration: none;
+  text-decoration: none;
 }
 
-
 .custom-button1 {
-    width: 200px;
-    height: 60px;
-    border: 2px solid black;
-    border-radius: 0;
-    padding: 15px 20px;
-    background-color: black;
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    cursor: pointer;
-    margin-right: 10px;
+  width: 200px;
+  height: 60px;
+  border: 2px solid black;
+  border-radius: 0;
+  padding: 15px 20px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  margin-right: 10px;
 }
 
 .custom-button1:hover {
-    background-color: white;
-    color: black;
-    text-decoration: none;
+  background-color: white;
+  color: black;
+  text-decoration: none;
 }
 
-
 .custom-button2 {
-    width: 200px;
-    height: 60px;
-    border: 2px solid black;
-    border-radius: 0;
-    padding: 10px 20px;
-    background-color: #ffffff;
-    color: #000000;
-    text-decoration: none;
-    display: inline-block;
-    text-align: center;
-    font-size: 16px;
-    cursor: pointer;
+  width: 200px;
+  height: 60px;
+  border: 2px solid black;
+  border-radius: 0;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  color: #000000;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
 }
 
 .custom-button2:hover {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 #anchor1 {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .v-a2 {
-    color: black;
+  color: black;
 }
 
 .three-details {
-    font-weight: 600;
-    text-decoration: underline;
+  font-weight: 600;
+  text-decoration: underline;
 }
 
 /* part-2 */
 
 .v-h6 {
-    color: #000000;
-    font-weight: 510;
-    margin-left: 50px;
+  color: #000000;
+  font-weight: 510;
+  margin-left: 50px;
 }
 
 #v-like {
-    margin-top: 200px;
+  margin-top: 200px;
 }
 
-
 .v-product-card {
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: 35px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 35px;
 }
 
 #product-viewed {
-    margin-right: 20px;
+  margin-right: 20px;
 }
 
 #content {
-    max-height: 100px;
-    overflow: hidden;
-    transition: max-height 0.3s ease;
+  max-height: 100px;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
 }
 
 .v-viewed {
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-wrap: wrap;
-    /* gap: 10px; */
-    margin-left: 35px;
-    margin-top: 20px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  /* gap: 10px; */
+  margin-left: 35px;
+  margin-top: 20px;
 }
 
 .card {
-    border: none;
+  border: none;
 }
 
 .card:hover {
-    border: none;
-    cursor: pointer;
-    color: #979696;
+  border: none;
+  cursor: pointer;
+  color: #979696;
 }
 
 .card-text {
-    text-align: center;
-    font-size: 14px;
-    line-height: 0.6;
+  text-align: center;
+  font-size: 14px;
+  line-height: 0.6;
 }
 
 .card-title {
-    text-align: center;
-    font-size: 14px;
-    font-weight: 600;
-    line-height: 0.8;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 0.8;
 }
 
 #viewToggleBtn {
-    cursor: pointer;
-    color: #ffffff;
-    text-decoration: none;
-    background-color: #000000;
-    border: #000000;
-    height: 45px;
-    width: 120px;
-    padding-left: 25px;
-    padding-top: 8px;
-    display: block;
-    border-radius: 5px;
-
+  cursor: pointer;
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #000000;
+  border: #000000;
+  height: 45px;
+  width: 120px;
+  padding-left: 25px;
+  padding-top: 8px;
+  display: block;
+  border-radius: 5px;
 }
 
 #viewToggleBtn:hover {
-    background-color: #ffffff;
-    color: #000000;
-    border: 1px solid black;
-    text-decoration: none;
+  background-color: #ffffff;
+  color: #000000;
+  border: 1px solid black;
+  text-decoration: none;
 }
 
 .v-b1 {
-    margin-right: 0px;
-    text-decoration: none;
-
+  margin-right: 0px;
+  text-decoration: none;
 }
 
 .v-b1:hover {
-    margin-right: 0px;
-    text-decoration: none;
+  margin-right: 0px;
+  text-decoration: none;
 }
-
 
 /*  */
 
 .custom-btn1 {
-    width: 130px;
-    height: 50px;
-    border: 2px solid black;
-    border-radius: 12px;
-    padding: 10px 20px;
-    background-color: black;
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    cursor: pointer;
-    margin-right: 10px;
-    margin-left: 45%;
-
-
+  width: 130px;
+  height: 50px;
+  border: 2px solid black;
+  border-radius: 12px;
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  margin-right: 10px;
+  margin-left: 45%;
 }
 
 .custom-btn1:hover {
-    background-color: white;
-    color: black;
-    text-decoration: none;
+  background-color: white;
+  color: black;
+  text-decoration: none;
 }
 
 #product-viewed {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
 }
 
 /* Style for each product card */
 .product-card {
-    border: 1px solid #ddd;
-    padding: 10px;
-    width: 230px;
-    text-align: center;
+  border: 1px solid #ddd;
+  padding: 10px;
+  width: 230px;
+  text-align: center;
 }
 
 /*  */
 
 .details {
-    display: none;
+  display: none;
 }
 
 .three-details {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 #details1 {
-    display: block;
+  display: block;
 }
 
 ul {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 li {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 a {
-    text-decoration: none;
-    color: black;
-    cursor: pointer;
-    display: inline-block;
-    margin-right: 30px;
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+  display: inline-block;
+  margin-right: 30px;
 }
 
 /* a:hover {
     text-decoration: underline;
 } */
 
-#details1>ul>li {
-    font-size: 14px;
+#details1 > ul > li {
+  font-size: 14px;
 }
 
-#details3>p {
-    font-size: 14px;
+#details3 > p {
+  font-size: 14px;
 }
 
 #details3 {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 
 .small-img {
-    height: 400px;
-    width: 450px;
-    margin-left: 10px;
-    display: flex;
+  height: 400px;
+  width: 450px;
+  margin-left: 10px;
+  display: flex;
 }
 
 .small-img1 {
-    height: 350px;
-    width: 200px;
-    margin-left: 30px;
-
+  height: 350px;
+  width: 200px;
+  margin-left: 30px;
 }
 
 .vm {
-    height: 300px;
-    width: 200px;
-    margin-left: 20px;
+  height: 300px;
+  width: 200px;
+  margin-left: 20px;
 }
 
-
 .pro-test {
-    height: 50px;
-    width: 230px;
-    border: 1px solid;
+  height: 50px;
+  width: 230px;
+  border: 1px solid;
 }
 
 .small-img2 {
-    height: 300px;
-    width: 235px;
-    margin-right: 50px;
+  height: 300px;
+  width: 235px;
+  margin-right: 50px;
 }
-
 
 /* .visible {
     border-bottom: 2px solid black;
 } */
 
 .vibha {
-    border-bottom: 2px solid grey;
-    width: 350px;
+  border-bottom: 2px solid grey;
+  width: 350px;
 }
 
 .line {
-    width: 100%;
-    height: 2px;
-    display: flex;
-
+  width: 100%;
+  height: 2px;
+  display: flex;
 }
 
 .line1 {
-    width: 100%;
-    height: 0.1px;
-    border: 1px solid;
-    margin-left: 50px;
-    margin-top: 20px;
+  width: 100%;
+  height: 0.1px;
+  border: 1px solid;
+  margin-left: 50px;
+  margin-top: 20px;
 }
 
 .line2 {
-    width: 100%;
-    height: 0.1px;
-    border: 1px solid;
-    margin-right: 50px;
-    margin-top: 20px;
+  width: 100%;
+  height: 0.1px;
+  border: 1px solid;
+  margin-right: 50px;
+  margin-top: 20px;
 }
