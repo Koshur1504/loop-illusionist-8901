@@ -1,0 +1,245 @@
+/* .......... */
+
+#logo {
+    height: 40px;
+    width: 45px;
+    margin-left: 60px;
+}
+
+.v-span {
+    margin-left: 750px;
+    font-size: 14px;
+}
+
+.chat {
+    color: black;
+    font-size: 14px;
+    margin-right: 50px;
+}
+
+#Shipping {
+    background-color: black;
+    height: 40px;
+    margin-left: 50px;
+    margin-right: 50px;
+
+}
+
+#Shipping a {
+    color: white;
+    font-size: 14px;
+    font-weight: 550;
+}
+
+#Shipping a:nth-child(1) {
+    margin-left: 400px;
+}
+
+#Shipping a:nth-child(3) {
+    margin-right: 400px;
+}
+
+/*  */
+
+.v-select {
+    margin-left: 115px;
+    margin-top: 50px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.container {
+    width: 85%;
+    height: auto;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+
+}
+
+.v-container1 {
+    width: 60%;
+    height: 600px;
+    /* border: 1px solid black; */
+    border-radius: 5px;
+    box-sizing: border-box;
+
+}
+
+#payment-form {
+    width: 100%;
+    height: 50vh;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 20px;
+    box-sizing: border-box;
+
+}
+
+#pay {
+    margin-left: 5px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+#pay-card {
+    font-size: 14px;
+    color: #818181;
+    margin-left: 5px;
+}
+
+.form-box {
+    margin-top: 10px;
+    border-radius: 0px;
+    height: 50px;
+    border: 1px solid #929191;
+}
+
+.month {
+    margin-top: 15px;
+    display: flex;
+    gap: 10px;
+}
+
+.month select:nth-child(1) {
+    width: 125px;
+    height: 50px;
+    border-radius: 5px;
+    border: 1px solid #929191;
+}
+
+.month select:nth-child(2) {
+    width: 125px;
+    height: 50px;
+    border-radius: 5px;
+    border: 1px solid #929191;
+}
+
+.month input {
+    width: 332px;
+    height: 50px;
+    /* margin-left: 10px; */
+}
+
+#longBtn {
+    background-color: #000000;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    height: 50px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 8px;
+}
+
+#longBtn:hover {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid rgb(122, 122, 122);
+    font-weight: 600;
+}
+
+
+
+.v-order {
+    width: 40%;
+    height: auto;
+    margin-left: 20px;
+    /* margin-top: 45px; */
+    /* border: 1px solid red; */
+}
+
+/* 2 */
+
+.container2 {
+    width: 90%;
+    height: auto;
+    margin-top: 45px;
+    /* margin-left: 10px; */
+
+}
+
+#box {
+    width: 330px;
+    height: auto;
+    border: 1px solid #c4c3c3;
+    margin-left: 35px;
+    margin-top: 15px;
+}
+
+#box1 {
+    width: 350px;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.price1 {
+    width: 150px;
+    height: 200px;
+    margin-left: 25px;
+}
+
+.price1 p {
+    font-size: 14px;
+    margin-top: 15px;
+    color: black;
+    font-weight: 550;
+}
+
+.price2 {
+    width: 150px;
+    height: 200px;
+    margin-left: 30px;
+
+}
+
+.price2 p {
+    font-size: 14px;
+    margin-top: 15px;
+    color: black;
+    font-weight: 550;
+}
+
+.v-p1 {
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 14px;
+    color: brown;
+    padding-bottom: 10px;
+}
+
+.pro_image {
+    width: 350px;
+    height: 200px;
+    margin-left: 35px;
+    display: flex;
+    justify-content: space-between;
+}
+
+hr {
+    margin-left: 35px;
+    margin-right: 40px;
+}
+
+.img1 {
+    height: 150px;
+    width: 100px;
+    margin-top: 20px;
+}
+
+.img1>img {
+    height: 150px;
+    width: 100px;
+}
+
+.text1 {
+    height: 200px;
+    width: 220px;
+}
+
+.text1 p {
+    font-size: 14px;
+}
