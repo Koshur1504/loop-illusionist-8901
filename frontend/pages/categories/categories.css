@@ -1,0 +1,684 @@
+*{
+  font-family: Montserrat,Arial,sans-serif;
+  /* color:black; */
+}
+
+.majorbox{
+    width:100%;
+    height: auto;
+    /* border: 1px solid black; */
+}
+.headerandlogocombine{
+    width: 100%;
+   height: 180px;
+   /* border: 1px solid black; */
+}
+.header1{
+    width: 100%;
+    height: 40px;
+    /* border: 1px solid black; */
+   
+}
+.header1 ul{
+    display: flex;
+    margin-top: 1px;
+    justify-content: right;
+    margin-right: 70px;
+}
+.header1 ul li{
+    font-size: 1em;
+    line-height: inherit;
+    letter-spacing: inherit;
+    list-style-type: none;
+}
+.countryPreferencelist{
+    background-color: transparent;
+    width: 100px;
+    height: 22px;
+    margin-top: 15px;
+    margin-left: 15px;
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid white; */
+    border: none;
+}
+.countryprefer:hover .countryPreferencelist {
+    text-decoration: underline; /* Add underline on hover */
+  }
+  .countryprefer {
+    list-style-type: none;
+  }
+  .flagindia {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    position: relative;
+    border: 1px solid white;
+    background-image: url(https://is4.fwrdassets.com/r/assets/main/source/flags/in.svg);
+    background-size: cover;
+    margin-bottom: 10px;
+    /* border: none; */
+  }
+.signinpage{
+    list-style-type: none;
+    line-height: inherit;
+    margin-top: 15px;
+}
+.signinpage a{
+ 
+ 
+  color: black;
+  text-decoration: none;
+}
+.signinpage a:hover {
+  text-decoration: underline;
+}
+
+  #clothing-selectors {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+  }
+  #clothing-selectors nav {
+    margin: 0 10px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    color: #fff;
+    background-color: #555;
+    /* border: none; */
+  }
+  .clothing-sections {
+    display: none;
+    padding: 20px;
+  }
+  
+  .clothing-sections p {
+    font-size: 18px;
+    color: #333;
+    margin: 0;
+  }
+  .mainlogo {
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    background-image: url(./images/logo\ js\ 2.jpeg);
+    background-size: cover;
+    border:none;
+  }
+  .logocontent1 {
+    width: 100%;
+    height: 100px;
+    border: 1px solid red;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    border: none;
+  }
+  .searchwishlist1 {
+    width: 320px;
+    height: 40px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    border:none;
+  }
+  .search1 {
+    width: 90px;
+    height: 20px;
+    /* border: 2px solid black; */
+    display: flex;
+    
+  
+    /* border:none; */
+  }
+  .icon1 {
+    width: 20px;
+    height: 20px;
+    /* border: 1px solid black; */
+    /* border:none; */
+  }
+  .wishtlis1t {
+    width: 90px;
+    height: 30px;
+    /* border: 1px solid black; */
+    color:black;
+    
+    /* border:none; */
+  }
+  .wishtlist1:hover{
+      text-decoration: underline;
+  }
+  .mybag1 {
+    width: 90px;
+    height: 20px;
+    /* border: 1px solid black; */
+    /* border:none; */
+  }
+  .menlink:focus,
+  .womenlink:focus {
+      text-decoration: underline;
+      outline: none; /* Remove the default focus outline */
+  }
+  
+  .menlink,
+  .womenlink {
+      text-decoration: none;
+      cursor: pointer;
+  }
+  
+  .wish1 {
+    color: black; 
+    text-decoration: none;
+   
+  }
+  .headerlogocontent {
+    width: 90%;
+    height: 100px;
+    /* border: 1px solid black; */
+    display: flex;
+    margin-left: 70px;
+    justify-content: space-between;
+    /* border: none; */
+  }
+
+
+
+
+  /* category page */
+
+  .productbox{
+    width: 90%;
+    height: 800px;
+    /* border: 1px solid black; */
+    /* display: grid;
+    grid-template-columns: repeat(2,1fr); */
+    margin-left: 70px;
+    gap: 10px;
+}
+
+.productheading{
+    width: 100%;
+    height: 200px;
+    /* border: 1px solid black; */
+}
+.productArrivals{
+    width: 100%;
+    height: 40px;
+    /* border:1px solid black; */
+    margin-top: 60px;
+}
+.productnav{
+    width:100%;
+    height: 45px;
+    /* border: 1px solid black; */
+    display: flex;
+    position: relative;
+    margin-top:50px;
+}
+
+.productnav h6{
+   font-weight: normal;
+}
+  .productnav button {
+    padding: 10px 15px;
+    cursor: pointer;
+    border: 1px solid black;
+    background-color: transparent;
+    color: black;
+    margin-top: 7px;
+    border:none;
+    /* border: none; */
+  }
+  #navarrow {
+    display: inline-block;
+   
+  }
+  
+  .productnav:hover #navarrow{
+    transform: rotate(180deg);
+  }
+  .productnav .productnav-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 300px;
+    min-height: 100px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    top: 100%; /* Position dropdown content just below the button */
+    left: 0;
+  }
+  .productnav:hover .productnav-content {
+    display: block;
+  }
+  
+  .productnav p {
+    padding: 10px;
+    margin: 0;
+    font-size: small;
+    line-height: 10px;
+  }
+ 
+ 
+  .productmmain1section a{
+    text-decoration: none;
+    color: black;
+  }
+  .productmmain1section a:hover{
+    text-decoration: underline;
+  }
+
+  .productcategorymain{
+    width: 100%;
+    height: auto;
+    /* border: 1px solid black; */
+    display: flex;
+    margin-top: 20px;
+    /* grid-template-columns: repeat(2,1fr); */
+
+  }
+  .productcategorymain>div{
+    /* border: 1px solid black; */
+  }
+  .productmmain1section{
+    width: 250px;
+    height: auto;
+    /* border: 1px solid black; */
+    line-height: 30px;
+  }
+  .productcardSection{
+    width: 100%;
+    margin-left: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .card {
+    width: 350px;
+    /* border: 1px solid #ccc; */
+    border-radius: 8px;
+    overflow: hidden;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+  }
+
+  /* Card content styling */
+  .card-content {
+    padding: 16px;
+  }
+
+  /* Card title styling */
+  .card-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+
+  /* Card description styling */
+  .card-description {
+    font-size: 16px;
+    color: #555;
+  }
+
+  /* Card image styling */
+  .card-image {
+    width: 100%;
+    height: 550px;
+    object-fit: cover;
+  }
+  .heart{
+    padding: 8px;
+  }
+  .heartbox{
+    width:40px;
+    height: 40px;
+    border: 1px solid black;;
+    margin-left:280px;
+    border-radius: 50%;
+    border: none;
+  }
+  .heartbox:hover{
+    cursor: pointer;
+    border: 1px solid black;
+  }
+  .cardheading{
+    text-align: center;
+  }
+  .cardpara{
+    text-align:center ;
+  }
+
+  .maindropdowns{
+    width:100%;
+    height:auto;
+    /* border: 1px solid black; */
+}
+.womenlink {
+    text-decoration: none;
+    cursor: pointer;
+}
+.dropdownnav {
+  width: 90%;
+  height: 40px;
+  border: 1px solid red;
+  margin-left: 70px;
+  border:none;
+}
+.navbar li {
+  list-style-type: none;
+}
+.navbar li a {
+  text-decoration: none;
+}
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: end;
+}
+.navbar li a:hover {
+  text-decoration: underline;
+}
+.content {
+  width: 80%;
+  height: auto;
+  background-color: white;
+  border: 1px solid black;
+  border: none;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px;
+  position: absolute;
+  transform: translate(0%);
+  visibility: hidden;
+  opacity: 0;
+  top: 10rem;
+  margin-top: 20px;
+  /* bottom: 40px; */
+  line-height: 40px;
+  border-radius: 5px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+ 
+}
+.content > div {
+  border: 1px solid black;
+  border:none;
+  
+  
+}
+.cat1 a ,.clothing-selectors a{
+  color:black;
+}
+
+.cat1:hover > .content {
+  visibility: visible;
+  opacity: 1;
+  top: 11rem;
+}
+.content1 {
+  width: 70%;
+  height: auto;
+  background-color: white;
+  border: 1px solid black;
+  border: none;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px;
+  position: absolute;
+  transform: translate(0%);
+  visibility: hidden;
+  opacity: 0;
+  top: 10rem;
+  line-height: 40px;
+  border-radius: 5px;
+}
+
+.blacksection {
+    width: 90%;
+    height: 50px;
+    border: 1px solid black;
+    margin-left: 70px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    border: none;
+    margin-top:12px;
+    align-items: center;
+
+}
+ .footer{
+    width:100%;
+    height: 500px;
+    /* border: 1px solid black; */
+    margin-top:1700px;
+ }
+ .footercontent{
+    width:100%;
+    height: auto;
+    /* border: 1px solid black; */
+    margin-top: 120px;
+ }
+ .headingfoot{
+    width: 800px;
+    height: 150px;
+    border: 1px solid black;
+    margin-left: 30px;
+    border:none;
+    
+}
+.footheading{
+    height: 150px;
+    width: 90%;
+    border: 1px solid black;
+    margin-left: 70px;
+    margin-top: 70px;
+    background-color: #e3d4d0;
+    display:flex;
+    border:none;
+   
+}
+
+   
+.applestore img{
+    width:100px;
+    height: 50px;
+    margin-top: 50px;
+    transition: filter 0.3s ease;
+}
+.applestore img:hover{
+    filter: grayscale(100%);
+} 
+.applestore {
+    position: relative;
+    
+}
+
+.applestore img {
+    width: 100px;
+    height: 50px;
+    transform: translateX(300px); 
+    margin-top: 50px;
+    transition: filter 0.3s ease;
+    color: inherit;
+}
+
+.applestore img:hover {
+    filter: brightness(0.7);
+}
+.footheading2{
+    width: 100%;
+    height: 50px;
+    border: 1px solid black;
+    background-color: #e3d4d0;
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:none;
+}
+
+.footheading2 p{
+    margin-left: 20px;
+    
+   
+}
+.footheading2 span{
+    margin-left: 20px;
+    text-decoration: underline;
+    
+}
+.mainfootcontent{
+    width: 100%;
+    border: 1px solid black;
+    margin-top:20px;
+    border:none;
+}
+.contentfoot{
+    width: 90%;
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    margin-left: 70px;
+    border:none;
+
+}
+.contentfoot>div{
+    border: 1px solid black;
+    border:none;
+}
+.contentfoot>div a{
+    line-height: 30px;
+    font-size: small;
+    color: black;
+    text-decoration: none;
+    
+}
+.contentfoot>div a:hover{
+    text-decoration: underline;
+}
+.crosstickimg{
+    width:20px;
+    height:30px;
+    margin-left: 30px;
+ 
+}
+.specialelementfoot{
+    width: 200px;
+    height: 20px;
+    border:1px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    border: none;
+}
+textarea {
+    width: 480px;
+    height: 50px;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #961c1c;
+    display: flex;
+    position: relative;
+   
+    
+}
+.footcopyright{
+    margin-left: 65px;
+    color: #827f7f;
+}
+/* designs dropdown */
+
+/* Style for the dropdown container */
+.dropdown-container {
+    display: flex;
+    margin-top:-30px ;
+}
+
+.dropdown {
+    position: relative;
+    margin-right: 20px;
+}
+
+.dropdown button {
+    padding: 10px;
+   
+    color:black;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown .options {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #f1f1f1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: none;
+    min-width: 420px;
+    z-index: 1;
+}
+
+.dropdown .options a {
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+.dropdown:hover .options {
+    display: block;
+}
+  
+
+/* need help dropdown */
+.dropdown {
+    position: relative; /* Make sure the container is relative */
+  }
+  
+  .dropdown button {
+    padding: 16px 15px;
+    cursor: pointer;
+    border: 1px solid black;
+    background-color: transparent;
+    color: black;
+    margin-top: 40px;
+    border: none;
+  }
+  
+  /* .material-symbols-outlined {
+    display: inline-block;
+  } */
+ 
+  
+  .buttontext {
+    display: flex; /* Make the children display in a row */
+    align-items: normal; /* Align children vertically centered */
+    margin-bottom: 40px;
+  }
+  
+  .dropdown .needhelp:hover .material-symbols-outlined {
+    transform: rotate(180deg);
+  }
+  
+  .dropdown .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 300px;
+    min-height: 100px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    top: 50%;
+    left: 0;
+    margin-top: 20px;
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown p {
+    padding: 10px;
+    margin: 0;
+    font-size: small;
+    line-height: 10px;
+  }
