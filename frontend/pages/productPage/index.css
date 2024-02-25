@@ -19,6 +19,7 @@
   border-left-color: #ffffff;
   border-right-color: #ffffff;
   /* border: none; */
+  overflow: hidden;
 }
 
 #ul1 {
@@ -26,7 +27,6 @@
   margin-top: 1px;
   justify-content: right;
   margin-right: 70px;
-
 }
 
 .freeshipping {
@@ -73,8 +73,6 @@
   border: none;
 }
 
-
-
 .signin {
   list-style-type: none;
   line-height: inherit;
@@ -111,7 +109,6 @@
   border: none;
 }
 
-
 .clothing-selector {
   width: 150px;
   height: 40px;
@@ -123,12 +120,10 @@
   border: none;
 }
 
-
 .dropdown {
   position: relative;
   /* Make sure the container is relative */
 }
-
 
 .dropdown button {
   padding: 6px 15px;
@@ -140,11 +135,9 @@
   border: none;
 }
 
-
 .material-symbols-outlined {
   display: inline-block;
 }
-
 
 .buttontext {
   display: flex;
@@ -154,11 +147,9 @@
   margin-bottom: 40px;
 }
 
-
 .dropdown .needhelp:hover .material-symbols-outlined {
   transform: rotate(180deg);
 }
-
 
 .dropdown .dropdown-content {
   display: none;
@@ -177,7 +168,6 @@
   display: block;
 }
 
-
 .dropdown p {
   padding: 10px;
   margin: 0;
@@ -185,14 +175,11 @@
   line-height: 10px;
 }
 
-
-
 #clothing-selector {
   text-align: center;
   padding: 20px;
   background-color: #333;
 }
-
 
 #clothing-selector nav {
   margin: 0 10px;
@@ -204,12 +191,10 @@
   border: none;
 }
 
-
 .clothing-section {
   display: none;
   padding: 20px;
 }
-
 
 .clothing-section p {
   font-size: 18px;
@@ -230,10 +215,9 @@
   width: 100px;
   height: 100px;
   /* border: 2px solid black; */
-  background-image: url(../Project/page-2/logo.jpeg);
+  background-image: url(../../assets/logo.jpeg);
   background-size: cover;
 }
-
 
 nav {
   background-color: #333;
@@ -242,7 +226,6 @@ nav {
   text-align: center;
 }
 
-
 nav a {
   text-decoration: none;
   color: white;
@@ -250,11 +233,9 @@ nav a {
   display: inline-block;
 }
 
-
 nav a:hover {
   /* background-color: #555; */
 }
-
 
 section {
   padding: 20px;
@@ -313,7 +294,6 @@ section {
   /* border: 1px solid black; */
 }
 
-
 .wish {
   color: black;
   /* Link color */
@@ -322,14 +302,12 @@ section {
   /* font-weight: bold; Make the text bold */
 }
 
-
 .menlink:focus,
 .womenlink:focus {
   text-decoration: underline;
   outline: none;
   /* Remove the default focus outline */
 }
-
 
 .menlink,
 .womenlink {
@@ -386,14 +364,10 @@ section {
   z-index: 1;
 }
 
-.content>div {
+.content > div {
   /* border: 1px solid black; */
   /* border: none; */
-
 }
-
-
-
 
 .alphabets {
   /* border: 1px solid black; */
@@ -404,7 +378,7 @@ section {
         opacity: 1;
         top: 11rem;
     } */
-.cat1:hover>.content {
+.cat1:hover > .content {
   visibility: visible;
   opacity: 1;
   top: 11rem;
@@ -438,11 +412,11 @@ section {
   gap: 20px;
 }
 
-.groupimage>div {
+.groupimage > div {
   /* border: 1px solid black; */
 }
 
-.groupimage>div:nth-child(1) {
+.groupimage > div:nth-child(1) {
   /* width: 5opx; */
   /* margin-left: 90px; */
   margin-top: 10px;
@@ -458,7 +432,7 @@ section {
   gap: 10px;
 }
 
-.groupimage2>div {
+.groupimage2 > div {
   /* border: 1px solid black; */
 }
 
@@ -466,12 +440,12 @@ img {
   width: 430px;
 }
 
-.content1>div:nth-child(1) {
+.content1 > div:nth-child(1) {
   background-image: url(https://is4.fwrdassets.com/images/up/2024/January/111624_FW_NAV_designers1_1x_r.jpg);
   background-size: cover;
 }
 
-.content1>div:nth-child(2) {
+.content1 > div:nth-child(2) {
   background-image: url(https://is4.fwrdassets.com/images/up/2024/February/020224_fw_khaite_3xpts_200x279.jpg);
   background-size: cover;
 }
@@ -505,10 +479,8 @@ img {
   gap: 10px;
 }
 
-.productimg1>div {
+.productimg1 > div {
   /* border: 1px solid black; */
-
-
 }
 
 .shoesimg {
@@ -640,8 +612,6 @@ img {
  
 } */
 
-
-
 /* .applestore {
   position: relative;
  
@@ -673,17 +643,13 @@ img {
   align-items: center;
 }
 
-
 .footheading2 p {
   margin-left: 20px;
-
-
 }
 
 .footheading2 span {
   margin-left: 20px;
   text-decoration: underline;
-
 }
 
 .mainfootcontent {
@@ -698,23 +664,20 @@ img {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   margin-left: 70px;
-
-
 }
 
-.contentfoot>div {
+.contentfoot > div {
   /* border: 1px solid black; */
 }
 
-.contentfoot>div a {
+.contentfoot > div a {
   line-height: 30px;
   font-size: small;
   color: black;
   text-decoration: none;
-
 }
 
-.contentfoot>div a:hover {
+.contentfoot > div a:hover {
   text-decoration: underline;
 }
 
@@ -722,7 +685,6 @@ img {
   width: 20px;
   height: 30px;
   margin-left: 30px;
-
 }
 
 .specialelementfoot {
@@ -742,7 +704,6 @@ textarea {
   border: 1px solid #961c1c;
   display: flex;
   position: relative;
-
 }
 
 .footcopyright {
@@ -769,15 +730,12 @@ textarea {
 
 #gridcardcontent p {
   width: 400px;
-  ;
   border: 1px solid black;
   /* margin-left: 10px; */
   white-space: pre-wrap;
   text-indent: 20px;
   text-align: center;
   transition: filter 0.3s ease;
-
-
 }
 
 #gridcardcontent:hover {
@@ -786,7 +744,6 @@ textarea {
 
 #gridcardcontent {
   transition: filter 0.3s ease;
-
 }
 
 .shoesmenimg {
@@ -893,16 +850,13 @@ textarea {
   background-size: cover;
 }
 
-
 #navimag:hover {
   filter: brightness(0.7);
 }
 
 #navimag {
   transition: filter 0.3s ease;
-
 }
-
 
 /* body {
     margin: 0px;
@@ -1209,11 +1163,11 @@ a {
     text-decoration: underline;
 } */
 
-#details1>ul>li {
+#details1 > ul > li {
   font-size: 14px;
 }
 
-#details3>p {
+#details3 > p {
   font-size: 14px;
 }
 
@@ -1281,4 +1235,13 @@ a {
   border: 1px solid;
   margin-right: 50px;
   margin-top: 20px;
+}
+
+.bag {
+  cursor: pointer;
+}
+
+.bag:hover,
+.wish:hover {
+  text-decoration: underline;
 }

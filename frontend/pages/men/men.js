@@ -3,19 +3,19 @@ let baseURL = isDevelopment
   ? "http://127.0.0.1:5500/frontend"
   : "https://loop-illusionist-8901-1.onrender.com";
 
-let cat_links = document.querySelectorAll("#cat_links > ul > li > a");
+let cat_links = document.querySelectorAll(".dropdownnav > ul > li > a");
 let cards = document.querySelectorAll(".productimg1 > divs");
 let cards_2 = document.querySelectorAll(".groupimage2");
 let cartElement = document.querySelector(".mybag > .bag");
 let groupimages1 = document.querySelectorAll(".groupimages1");
 let wishListElement = document.querySelector(".wishtlist > .wish");
 
-let gender = "female";
+let gender = "male";
 function appendLinks() {
   // categories links
   cat_links.forEach((item) => {
     let endPoint = item.innerHTML.toLocaleLowerCase();
-    let arr = ["clothing", "shoes", "bags", "accessories", "beauty"];
+    let arr = ["clothing", "shoes", "bags", "accessories"];
     if (!arr.includes(endPoint)) {
       endPoint = "clothing";
     }

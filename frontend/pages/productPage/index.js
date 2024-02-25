@@ -1,11 +1,19 @@
 let details = document.querySelectorAll(".details");
 let three_details = document.querySelectorAll(".three-details");
+let cartElement = document.querySelector(".mybag > .bag");
+let wishListElement = document.querySelector(".wishtlist > .wish");
+let cart = JSON.parse(localStorage.getItem("cart")) || [];
+let wishList = JSON.parse(localStorage.getItem("wishList")) || [];
 let products = [];
 
-let depURL = "http://127.0.0.1:5500/frontend/pages/productPage/index.html";
+const isDevelopment = window.location.hostname.includes("127.0.0.1");
+let depURL = isDevelopment
+  ? "http://127.0.0.1:5500/frontend"
+  : "https://loop-illusionist-8901-1.onrender.com";
 
 let params = new URL(document.location).searchParams;
 let paramID = params.get("id");
+
 function rainderItems() {
   product_image.setAttribute("src", products.image);
   three_details.forEach((item) => {
@@ -15,7 +23,6 @@ function rainderItems() {
   });
   details[0].style.display = "block";
   three_details[0].classList.add("visible");
-  console.log(car1);
 }
 function handelActive(e) {
   three_details.forEach((item) => {
@@ -103,14 +110,15 @@ function setProductsDetails() {
   document.querySelector(".v-container2 .brand").innerHTML = product.brand;
   document.querySelector(".v-container2 .title").innerHTML = product.title;
   document.querySelector(".v-container2 .price").innerHTML = product.price;
-  document.querySelector(".v-container2 .price").innerHTML = `₹${product.price}`;
+  document.querySelector(".v-container2 .price").innerHTML =
+    `₹${product.price}`;
 }
 
 function creatCard(item) {
   let card = document.createElement("div");
   card.addEventListener("click", () => {
     let id = item.id;
-    window.location.replace(`${depURL}?id=${id}`);
+    window.location.href = `${depURL}/pages/productPage/index.html?id=${id}`;
   });
   card.classList.add("card");
   card.style.width = "16rem";
@@ -166,15 +174,18 @@ function appendrecentLiked() {
 getRecently();
 
 // cart
-let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
 document.querySelector("#cartButton").addEventListener("click", addToCart);
-document.querySelector(".btn-outline-dark").addEventListener("click", addToCart);
+document
+  .querySelector(".btn-outline-dark")
+  .addEventListener("click", addToCart);
 function addToCart() {
   cart.push(product);
   localStorage.setItem("cart", JSON.stringify(cart));
+  cartValues();
 }
 
-// wishlist
+// wishList
 function hasItem(arr, id) {
   for (const item of arr) {
     if (item.id === id) {
@@ -183,13 +194,37 @@ function hasItem(arr, id) {
   }
   return false;
 }
-let wishlist = JSON.parse(localStorage.getItem("wishlist")) || [];
+
 document.querySelector("#wishlist").addEventListener("click", addToWishlist);
 function addToWishlist() {
-  if (!hasItem(wishlist, product.id)) {
-    wishlist = [product, ...wishlist];
-    localStorage.setItem("wishlist", JSON.stringify(wishlist));
+  if (!hasItem(wishList, product.id)) {
+    wishList = [product, ...wishList];
+    localStorage.setItem("wishList", JSON.stringify(wishList));
   } else {
-    alert("item already in wishlist");
+    alert("item already in wishList");
   }
+  wishlistValues();
 }
+
+// get cart
+function cartValues() {
+  cartElement.innerText = `My Bag (${cart.length})`;
+}
+
+cartValues();
+
+// get wishList
+
+function wishlistValues() {
+  wishListElement.innerText = `Wish List (${wishList.length})`;
+}
+
+wishlistValues();
+
+cartElement.addEventListener("click", () => {
+  window.location.href = `${depURL}/pages/cart/cart.html`;
+});
+
+wishListElement.addEventListener("click", () => {
+  window.location.href = `${depURL}/pages/wishlist/wishlist.html`;
+});
