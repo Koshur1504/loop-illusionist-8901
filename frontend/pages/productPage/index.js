@@ -39,9 +39,9 @@ function toggleContent() {
   }
   expanded = !expanded;
 }
-viewToggleBtn.addEventListener("click", (e) => {
-  e.preventDefault();
-});
+// viewToggleBtn.addEventListener("click", (e) => {
+//   e.preventDefault();
+// });
 
 /////
 
