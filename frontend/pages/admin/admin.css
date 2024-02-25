@@ -1,68 +1,169 @@
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	font-family: sans-serif;
-}
-
-a {
-	text-decoration: none;
-}
-
-li {
-	list-style: none;
+body {
+    margin: 0;
+    font-family: Montserrat,Arial,sans-serif;  
 }
 
 #sidebar {
-	position: fixed;
-	top: 0px;
-	left: 0;
-	width: 280px;
-	height: 100%;
-    padding: 2px;
-	background: black;
-	color: white;
-	z-index: 2000;
-	padding-top: 20px;
+    height: 100vh;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: black;
+    color: #fff;
+}
+
+.side-menu {
+    list-style: none;
+    padding: 0;
+}
+
+.admin-greeting{
+    padding: 20px;
+    display: flex; 
+    align-items: center;
 }
 
 .side-menu li {
-	height: 60px;
-	padding: 20px;
-    display: flex;
-    align-items: center;
-}
-.side-menu li.active {
-	background: #eeeded;
-	position: relative;
-}
-.side-menu li.active a:hover{
-	color: black;
-}
-.side-menu li a {
-	color: white;
-	font-size: large;
-}
-.side-menu li.active a {
-	color: black;
+    padding: 20px 20px;
 }
 
-.logout {
-	color: red;
+.side-menu li.active {
+   background-color: #555;
 }
-.side-menu li a:hover {
-	color: rgb(237, 235, 235);
+
+.side-menu li.active a:hover {
+    color: white;
+ }
+
+.side-menu a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+	font-size: 18px;
 }
-.side-menu li a i{
+
+.side-menu a:hover {
+    color: #b8b8b8;
+}
+
+.side-menu i{
+	padding: 0 10px;
+}
+
+#content {
+    margin-left: 250px; 
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+	background-color: white;
+    position: fixed;
+    width: 1250px;
+    top: 0;
+    z-index: 1000;
+}
+
+nav img{
+    width:80px;
+}
+
+nav form {
+    display: flex;
+}
+
+.form-input {
+    display: flex;
+}
+
+.form-input input {
+    padding: 10px;
+    width: 500px;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.search-btn {
+    width: 40px;
+    padding: 8px;
+    background-color: black;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 0px 5px 5px 0px;
+
+}
+.notification{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.notification i {
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+.notification img{
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+
+.mainTitle{
+    padding: 20px 10px 5px 0;
+	position: fixed;
+    top: 80px;
+    font-size: 18px;
+	background-color: white;
+	width: 100%;
+}
+
+.mainTitle h1{
     margin: 0 20px;
 }
-main h1{
-    text-align: center;
-	margin-top: 50px;
+
+#data{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px 20px;
 }
-#content {
-	position: relative;
-	width: calc(100% - 280px);
-	left: 280px;
-	transition: .3s ease;
+
+#data>div{
+    height: 150px;
+    width: 300px;
+    padding: 10px 0;
+    border: 3px solid;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    margin-top: 160px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 2px;
+}
+
+#data>div:hover{
+    background-color: rgb(239, 236, 236);
+    color: black;
+    scale: 1.02;
+}
+
+#totalOrders, #totalProducts, #totalCustomers, #totalRevenue{
+    font-size: 40px;
+    margin-top: 0px;
+}
+
+#charts{
+    width: 70%;
+    height: 400px;
+    margin: 50px auto;
+}
+
+#charts>div{
+    margin: 100px 0;
 }
