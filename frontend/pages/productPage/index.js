@@ -103,7 +103,7 @@ function setProductsDetails() {
   document.querySelector(".v-container2 .brand").innerHTML = product.brand;
   document.querySelector(".v-container2 .title").innerHTML = product.title;
   document.querySelector(".v-container2 .price").innerHTML = product.price;
-  document.querySelector(".v-container2 .price").innerHTML = product.price;
+  document.querySelector(".v-container2 .price").innerHTML = `₹${product.price}`;
 }
 
 function creatCard(item) {
@@ -168,6 +168,7 @@ getRecently();
 // cart
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
 document.querySelector("#cartButton").addEventListener("click", addToCart);
+document.querySelector(".btn-outline-dark").addEventListener("click", addToCart);
 function addToCart() {
   cart.push(product);
   localStorage.setItem("cart", JSON.stringify(cart));
