@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <title>payment</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="./payment.css">
+</head>
+
+<body class="p-3 m-0 border-0 bd-example m-0 border-0">
+
+    <!-- Example Code -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <img id="logo" src="../../assets/logo.jpeg" alt="">
+            <span class="v-span">Need assistance?1-888-442-5830</span>
+            <a class="chat" href="#">Live Chat</a>
+        </div>
+    </nav>
+
+    <nav class="navbar navbar-expand-lg" id="Shipping">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">SHIPPING</a>
+            <a class="navbar-brand" href="#">PAYMENT</a>
+            <a class="navbar-brand" href="#">COMPLETED</a>
+        </div>
+    </nav>
+
+    <!--  -->
+
+    <p class="v-select">SELECT PAYMENT METHOD</p>
+    <div class="container">
+        <div class="v-container1">
+            <div class="mb-3" id="payment-form">
+                <a id="pay">Pay with a credit/Debit Card</a> <br>
+                <a id="pay-card">Visa, MasterCard, American Express, Discover, JCB, Diners Club</a>
+                <input type="email" class="form-control form-box" id="exampleFormControlInput1"
+                    placeholder="card number">
+
+                <div class="month">
+                    <!-- <input type="month" id="expirationMonth" name="expirationMonth" placeholder="month" required> -->
+                    <div>
+                        <select id="selectMonth" class="form-select" aria-placeholder="month"
+                            aria-label="Default select example">
+                            <option selected>MM</option>
+                            <option value="1">01</option>
+                            <option value="1">02</option>
+                            <option value="1">03</option>
+                            <option value="1">04</option>
+                            <option value="1">05</option>
+                            <option value="1">06</option>
+                            <option value="1">07</option>
+                            <option value="1">08</option>
+                            <option value="1">09</option>
+                            <option value="1">10</option>
+                            <option value="1">11</option>
+                            <option value="1">12</option>
+                        </select>
+                    </div>
+                    <!-- <input type="number" id="expirationYear" name="expirationYear" min="2024" placeholder="year" required> -->
+                    <div>
+                        <select id="selectCountry" class="form-select" aria-placeholder="year"
+                            aria-label="Default select example">
+                            <option selected>YY</option>
+                            <option value="1">24</option>
+                            <option value="1">25</option>
+                            <option value="1">26</option>
+                        </select>
+                    </div>
+                    <div>
+                        <input type="text" id="securityCode" name="securityCode" maxlength="4"
+                            placeholder="security code" required>
+                    </div>
+                </div>
+            </div>
+
+            <button id="longBtn" onclick="submitInput()">SAVE AND CONTINUE</button>
+        </div>
+
+
+
+        <div class="v-order">
+
+            <p style="margin-left: 35px; margin-top: -40px; font-weight: 600;">ORDER SUMMARY</p>
+            <div id="box">
+                <div id="box1">
+                    <div class="price1">
+                        <p>SUBTOTAL</p>
+                        <p>PREORDER(10)*</p>
+                        <p>IMPORT FEES</p>
+                        <p>FEDEX EXPRESS</p>
+                        <p>TOTAL</p>
+                    </div>
+                    <div class="price2">
+                        <p>₹442,373.12</p>
+                        <p>₹2,177,785.75</p>
+                        <p>₹2,177,785.75</p>
+                        <p>FREE</p>
+                        <p>₹1,621,444.75</p>
+                    </div>
+                </div>
+
+                <p class="v-p1">*Your preorder item(s) will be charged when shipped. Actual amount charged
+                    will be based on the
+                    exchange rate at the time your order ships.
+                </p>
+            </div>
+            <br>
+            <p style="margin-left: 35px; font-size: 18px;">Items in Your Order (5)</p>
+            <hr>
+
+            <div class="pro_image">
+                <div class="img1">
+                    <img src="https://is4.fwrdassets.com/images/p/fw/p/TERX-WY472_V1.jpg" alt="">
+
+                </div>
+                <div class="text1">
+                    <span style="font-size: 14px; font-weight: 550;">THE ROW</span>
+                    <p>Laurie Bag in Syram Red & Chianti <br>
+                        Color: Syram Red & Chianti <br>
+                        Size: ONE SIZE / Quantity: 9 <br>
+                        ₹223,597.09 <br></p>
+                    <p><span style="font-size: 14px; font-weight: 550;">Preorder:</span> Expected to be In-Stock: <br>
+                        May 30 - Jun 09
+                    </p>
+                </div>
+            </div>
+            <hr>
+            <div class="pro_image">
+                <div class="img1">
+                    <img src="https://is4.fwrdassets.com/images/p/fw/p/LOEW-WY803_V1.jpg" alt="">
+
+                </div>
+                <div class="text1">
+                    <span style="font-size: 14px; font-weight: 550;">LOEWE</span>
+                    <p>Hammock Hobo Mini Bag in Black <br>
+                        Color: Black <br>
+                        Size: ONE SIZE / Quantity: 3 <br><br>
+                        ₹141,306.72
+                    </p>
+                </div>
+            </div>
+            <hr>
+            <div class="pro_image">
+                <div class="img1">
+                    <img src="https://is4.fwrdassets.com/images/p/fw/p/ILIR-WU191_V1.jpg" alt="">
+
+                </div>
+                <div class="text1">
+                    <span style="font-size: 14px; font-weight: 550;">ILIA</span>
+                    <p>Lip Wrap Overnight Treatment <br>
+                        Size: ONE SIZE / Quantity: 1 <br><br>
+                        ₹2,161.16
+                    </p>
+                </div>
+            </div>
+            <hr>
+            <div class="pro_image">
+                <div class="img1">
+                    <img src="https://is4.fwrdassets.com/images/p/fw/p/TERX-WY490_V1.jpg" alt="">
+
+                </div>
+                <div class="text1">
+                    <span style="font-size: 14px; font-weight: 550;">THE ROW</span>
+                    <p>Joe Backpack in Espresso <br>
+                        Color: Espresso <br>
+                        Size: ONE SIZE / Quantity: 1 <br>
+                        ₹165,411.98
+                    </p>
+                    <p><span style="font-size: 14px; font-weight: 550;">Preorder:</span> Expected to be In-Stock: <br>
+                        May 30 - Jun 09
+                    </p>
+                </div>
+            </div>
+            <hr>
+            <div class="pro_image">
+                <div class="img1">
+                    <img src="https://is4.fwrdassets.com/images/p/fw/p/CRNF-WL3_V1.jpg" alt="">
+
+                </div>
+                <div class="text1">
+                    <span style="font-size: 14px; font-weight: 550;">COPERNI</span>
+                    <p>Logo Necklace in Silver <br>
+                        Color: Silver <br>
+                        Size: ONE SIZE / Quantity: 1 <br>
+                        <br>
+                        ₹16,291.83
+                    </p>
+                </div>
+            </div>
+            <hr>
+        </div>
+    </div>
+
+
+
+
+    <!-- End Example Code -->
+</body>
+
+</html>
