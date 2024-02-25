@@ -4,8 +4,6 @@ let baseURL = isDevelopment
   : "https://loop-illusionist-8901-1.onrender.com";
 let apiBaseURL = `https://loop-illusionist-8901.onrender.com`;
 let cat_links = document.querySelectorAll(".dropdownnav > ul > li > a");
-let cartElement = document.querySelector(".mybag1 > .bag1");
-let wishListElement = document.querySelector(".wishtlist1 > .wish1");
 let productcardSection = document.querySelector(".productcardSection");
 let wishList = JSON.parse(localStorage.getItem("wishList")) || [];
 
@@ -16,7 +14,24 @@ let params = new URL(document.location).searchParams;
 let paramGender = params.get("gender");
 let paramCategory = params.get("category") || "clothing";
 let basicFilter = `&gender=${paramGender}&category=${paramCategory}`;
+let menNav = document.querySelector(".men-nav");
+let womenNav = document.querySelector(".women-nav");
+let menlink = document.querySelector(".menlink");
+let womenlink = document.querySelectorAll(".womenlink");
 
+paramGender == "male" ? womenNav.remove() : menNav.remove();
+let cartElement =
+  paramGender == "male"
+    ? document.querySelector(".mybag > .bag")
+    : document.querySelector(".mybag1 > .bag1");
+let wishListElement =
+  paramGender == "male"
+    ? document.querySelector(".wishtlist > .wish")
+    : document.querySelector(".wishtlist1 > .wish1");
+
+paramGender == "female"
+  ? womenlink[1].classList.add("active")
+  : menlink.classList.add("active");
 function appendLinks() {
   cat_links.forEach((item) => {
     let arr = ["BEAUTY", "SHOPS", "KENDELL'S EDITS"];
@@ -126,14 +141,14 @@ function addToWishlist(item) {
 }
 
 async function getData(filterParams) {
-  console.log(filterParams);
+  // console.log(filterParams);
   try {
     let data = await fetch(
       `${apiBaseURL}/products?_page=${page}&_limit=${limit}${filterParams}`,
     );
     let res = await data.json();
     products = res;
-    console.log(res);
+    // console.log(res);
     renderCards();
   } catch (error) {
     console.log(error);
