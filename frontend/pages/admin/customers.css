@@ -1,0 +1,221 @@
+body {
+    margin: 0;
+    font-family: Montserrat,Arial,sans-serif;  
+}
+
+#sidebar {
+    height: 100vh;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: black;
+    color: #fff;
+}
+
+.side-menu {
+    list-style: none;
+    padding: 0;
+}
+
+.admin-greeting{
+    padding: 20px;
+    display: flex; 
+    align-items: center;
+}
+
+.side-menu li {
+    padding: 20px 20px;
+}
+
+.side-menu li.active {
+   background-color: #555;
+}
+
+.side-menu li.active a:hover {
+    color: white;
+ }
+
+.side-menu a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+	font-size: 18px;
+}
+
+.side-menu a:hover {
+    color: #b8b8b8;
+}
+
+.side-menu i{
+	padding: 0 10px;
+}
+
+#content {
+    margin-left: 250px; 
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+	background-color: white;
+    position: fixed;
+    width: 1250px;
+    top: 0;
+    z-index: 1000;
+}
+
+nav img{
+    width:80px;
+}
+
+nav form {
+    display: flex;
+}
+
+.form-input {
+    display: flex;
+}
+
+.form-input input {
+    padding: 10px;
+    width: 500px;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.search-btn {
+    width: 40px;
+    padding: 8px;
+    background-color: black;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 0px 5px 5px 0px;
+
+}
+.notification{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.notification i {
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+.notification img{
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.mainTitle{
+    padding: 20px 10px 5px 0;
+	position: fixed;
+    top: 80px;
+    font-size: 18px;
+	background-color: white;
+	width: 100%;
+}
+
+.mainTitle h1{
+    margin: 0 20px;
+}
+
+
+/* Customers */
+
+table {
+    width: 90%;
+    margin: auto;
+    border: 2px solid;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid; 
+    text-align: center;
+}
+
+
+th {
+    background-color: #f2f2f2; 
+}
+
+thead>tr{
+    background-color: black;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #eeeded;
+}
+
+.PageBtn{
+    box-sizing: content-box;
+    height: 15px;
+    background-color: black;
+    color: white;
+    border: none;
+    font-size: medium;
+    letter-spacing: 1px;
+    font-weight: 500;
+    margin: 20px 0;
+    cursor: pointer;
+    padding: 10px 30px;
+    border:5px solid white;
+}
+
+.pagination-wrapper{
+    text-align: center;
+    padding: 50px;
+
+}
+#sortfilter{
+    background-color: black;
+    margin-top: 165px;
+    margin-bottom: 30px;
+    padding: 0px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 5%;
+    margin-left: 5%;
+    box-sizing: border-box;
+
+}
+
+h2{
+    color: white;
+}
+#rightPart{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+#searchBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#searchBox input[type="text"]{
+    width: 300px;
+    padding: 10px;
+}
+
+#searchBox input[type="button"]{
+    width: 80px;
+    padding: 10px 5px;
+}
+
+
+
+
+
+

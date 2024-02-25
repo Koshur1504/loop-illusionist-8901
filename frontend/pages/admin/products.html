@@ -5,24 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forward</title>
-    <link rel="stylesheet" href="./admin.css">
-    <script src="https://kit.fontawesome.com/a88c1550a0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./products.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-        rel="stylesheet"/>
-    <link rel="stylesheet" href="products.css"/>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="https://kit.fontawesome.com/a88c1550a0.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <div id="sidebar">
         <ul class="side-menu">
-            <li>
-                <a href="#" style="display: flex; align-items: center;">
-                    <span style="margin-left: 20px;">Hello Admin</span>
-                    <span class="material-symbols-outlined" style="margin: 0 10px;">waving_hand</span>
-                </a>
-            </li>
+            <a href="#" style="display: flex; align-items: center;" class="admin-greeting">
+                <span style="margin-left: 20px;">Hello Admin</span>
+                <span class="material-symbols-outlined" style="margin: 0 10px;">waving_hand</span>
+            </a>
             <li>
                 <a href="admin.html">
                     <i class="fa-solid fa-house"></i>
@@ -48,7 +46,7 @@
                 </a>
             </li>
             <li>
-                <a href="../Login/login.html" class="logout">
+                <a href="../Login/login.html" class="logout" style="color: red;">
                     <i class="fa-solid fa-arrow-right-from-bracket"></i>
                     <span>Logout</span>
                 </a>
@@ -56,92 +54,103 @@
         </ul>
     </div>
     <main id="content">
-        <h1>Products</h1>
-        <form id="productForm">
-            <input type="text" id="id" name="id" placeholder="ID">
-
-            <input type="text" id="title" name="title" placeholder="Title">
-
-            <input type="text" id="original_src" name="original_src" placeholder="Original Source">
-
-            <input type="text" id="image" name="image" placeholder="Image URL">
-
-            <input type="text" id="brand" name="brand" placeholder="Brand">
-
-            <input type="text" id="description" name="description" placeholder="Description">
-
-            <div>
-                <input type="text" id="price" name="price" placeholder="Price">
-
-                <input type="text" id="price_sale" name="price_sale" placeholder="Sale Price">
-            </div>
-
-            <div>
-                <input type="text" id="gender" name="gender" placeholder="Gender">
-
-                <input type="text" id="category" name="category" placeholder="Category">
-            </div>
-
-            <button id="addProductBtn" type="button">ADD</button>
-            <button id="updateProductBtn" type="button">UPDATE</button>
-
-        </form>
-        <div id="sortfilter">
-            <h2>Total Products : <span id="totalproducts"></span></h2>
-            <div id="rightPart">              
-                <div id="searchBox">
-                    <input type="text" name="textbox" id="textbox" placeholder="Search By Title">
-                    <input type="button" id="searchButton" value="Search"/>
+        <nav>
+            <img src="../../assets/logo.jpeg" alt="">
+            <form action="#">
+                <div class="form-input">
+                    <input type="search" placeholder="Search...">
+                    <button type="submit" class="search-btn" style="margin: 0px;">
+                        <i class="fa-solid fa-magnifying-glass"></i></button>
                 </div>
-                <div>
-                    <select name="filter" id="filtering">
-                        <option value="">Filter</option>
-                        <optgroup label="Gender">
-                            <option value="byMale">Male</option>
-                            <option value="byFemale">Female</option>
-                        </optgroup>
-                        <optgroup label="Category">
-                            <option value="Clothing">Clothing</option>
-                            <option value="Shoes">Shoes</option>
-                            <option value="Bags">Bags</option>
-                            <option value="Beauty">Beauty</option>
-                            <option value="Accessories">Accessories</option>
-                        </optgroup>
-                    </select>
-                </div>
-                              
-                <div>
-                    <select name="sorting" id="sortbyprice">
-                        <option value="">Sort By Price</option>
-                        <option value="HighToLow" id="HighToLow"> High To Low</option>
-                        <option value="LowToHigh" id="LowToHigh">Low To High</option>
-                    </select>
-                </div>
-            </div>
+            </form>
+            <span class="notification">
+                <i class="fa-solid fa-xl fa-bell"></i>
+                <i class="fa-solid fa-lg fa-message"></i>
+                <img src="../../assets/user5.jpg" alt="">
+            </span>
+        </nav>
+        <div class="mainTitle">
+            <h1><i class="fa-solid fa-sm fa-shirt"></i> Products</h1>
         </div>
-        <table>
-            <thead>
-                <tr>
-                    <td>No.</td>
-                    <td>Title</td>
-                    <td>Image</td>
-                    <td>Brand</td>
-                    <td>Description</td>
-                    <td>Price</td>
-                    <td>Gender</td>
-                    <td>Category</td>
-                    <td>View</td>
-                    <td>Edit</td>
-                    <td>Delete</td>
-                </tr>
-            </thead>
-            <tbody id="tablebody">
+        <div>
+            <form id="productForm">
+               <div>
+                <input type="text" id="id" name="id" placeholder="ID" style="width: 20%;">
+                <input type="text" id="title" name="title" placeholder="Product Name">
+               </div>
+                <div>
+                    <input type="text" id="original_src" name="original_src" placeholder="Original Source">
+                <input type="text" id="image" name="image" placeholder="Image URL">
+                </div>
+                <div>
+                    <input type="text" id="brand" name="brand" placeholder="Brand" style="width: 32%;">
+                <input type="text" id="description" name="description" placeholder="Description">
+                </div>
+                <div>
+                    <input type="text" id="price" name="price" placeholder="Price">
+                    <input type="text" id="price_sale" name="price_sale" placeholder="Sale Price">
+                    <input type="text" id="gender" name="gender" placeholder="Gender">
+                    <input type="text" id="category" name="category" placeholder="Category">
+                </div>
+                <button id="addProductBtn" type="button">ADD</button>
+                <button id="updateProductBtn" type="button">UPDATE</button>
+            </form>
 
-            </tbody>
+            <div id="sortfilter">
+                <h2>Total Products : <span id="totalproducts"></span></h2>
+                <div id="rightPart">
+                    <div id="searchBox">
+                        <input type="text" name="textbox" id="textbox" placeholder="Search By Product Name">
+                        <input type="button" id="searchButton" value="Search" />
+                    </div>
+                    <div>
+                        <select name="filter" id="filtering">
+                            <option value="">Filter</option>
+                            <optgroup label="Gender">
+                                <option value="byMale">Male</option>
+                                <option value="byFemale">Female</option>
+                            </optgroup>
+                            <optgroup label="Category">
+                                <option value="Clothing">Clothing</option>
+                                <option value="Shoes">Shoes</option>
+                                <option value="Bags">Bags</option>
+                                <option value="Beauty">Beauty</option>
+                                <option value="Accessories">Accessories</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                    <div>
+                        <select name="sorting" id="sortbyprice">
+                            <option value="">Sort By Price</option>
+                            <option value="HighToLow" id="HighToLow"> High To Low</option>
+                            <option value="LowToHigh" id="LowToHigh">Low To High</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
 
-        </table>
-        <div class="pagination-wrapper" id="pagination-wrapper">
-            <!-- append the pagination button here -->
+            <table>
+                <thead>
+                    <tr>
+                        <td>ID</td>
+                        <td>Product Name</td>
+                        <td>Image</td>
+                        <td>Brand</td>
+                        <td>Description</td>
+                        <td>Price</td>
+                        <td>Gender</td>
+                        <td>Category</td>
+                        <td>View</td>
+                        <td>Edit</td>
+                        <td>Delete</td>
+                    </tr>
+                </thead>
+                <tbody id="tablebody">
+
+                </tbody>
+            </table>
+            <div class="pagination-wrapper" id="pagination-wrapper">
+            </div>
         </div>
     </main>
     <script src="products.js"></script>

@@ -31,6 +31,10 @@ async function handleSignin(e) {
             body: JSON.stringify(loginData),
         });
         
+        // let getRes = await fetch(`${baseurl}/users`);
+        // let getdata = await getRes.json();
+        // console.log(getdata);
+
         if (res.status === 200) {
             let data = await res.json();
 
@@ -43,7 +47,15 @@ async function handleSignin(e) {
             loginPassword.value='';
 
             setTimeout(() => {
-                window.location.href = "../../index.html";
+            //    if(role==="admin"){
+            //     window.location.href = "../admin.html";
+            //    }
+            //    else{
+            //     window.location.href = "../../index.html";
+            //    }
+
+               window.location.href = "../../index.html";
+
             }, 1);
 
             localStorage.setItem("localAccessToken", JSON.stringify(data.accessToken));

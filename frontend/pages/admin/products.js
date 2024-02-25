@@ -43,7 +43,7 @@ function appendData(item) {
         description.innerHTML = ele.description;
 
         let price = document.createElement("td");
-        price.innerHTML = ele.price;
+        price.innerHTML = `₹${ele.price}`;
 
         let gender = document.createElement("td");
         gender.innerHTML = ele.gender;
@@ -99,7 +99,6 @@ function appendData(item) {
 }
 
 let currentPage = 1;
-
 function pagination(TotalPages, limit, queryParams) {
     paginationWrapper.innerHTML = "";
 
@@ -293,7 +292,7 @@ searchByButton.addEventListener("click", () => {
     if (input === "") {
         fetchData(`${productsUrl}?_page=1&_limit=20`);
     } else {
-        fetchData(`${productsUrl}?title=${input}&_page=1&_limit=20`);
+        fetchData(`${productsUrl}?title_like=${input}&_page=1&_limit=20`);
     }
 });
 
