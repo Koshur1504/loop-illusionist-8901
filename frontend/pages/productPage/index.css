@@ -1,3 +1,909 @@
+#mainbox {
+  width: 100%;
+  height: auto;
+  /* border: 1px solid black; */
+  border: none;
+}
+
+.globalheader {
+  width: 100%;
+  height: 190px;
+  /* border: 1px solid black; */
+}
+
+.uppermostheader {
+  width: 100%;
+  height: 40px;
+  border: 1px solid #cccccc;
+  border-top-color: #ffffff;
+  border-left-color: #ffffff;
+  border-right-color: #ffffff;
+  /* border: none; */
+}
+
+#ul1 {
+  display: flex;
+  margin-top: 1px;
+  justify-content: right;
+  margin-right: 70px;
+
+}
+
+.freeshipping {
+  font-size: 1em;
+  line-height: inherit;
+  letter-spacing: inherit;
+  list-style-type: none;
+}
+
+.freeshippingpara {
+  margin-top: 5px;
+}
+
+.countryPreference {
+  background-color: transparent;
+  width: 100px;
+  height: 22px;
+  margin-top: 4px;
+  margin-left: 15px;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid white;
+}
+
+.countryPreferencelink:hover .countryPreference {
+  text-decoration: underline;
+  /* Add underline on hover */
+}
+
+.countryPreferencelink {
+  list-style-type: none;
+}
+
+.flag {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  position: relative;
+  border: 1px solid white;
+  background-image: url(https://is4.fwrdassets.com/r/assets/main/source/flags/in.svg);
+  background-size: cover;
+  margin-right: 5px;
+  margin-top: 7px;
+  border: none;
+}
+
+
+
+.signin {
+  list-style-type: none;
+  line-height: inherit;
+  margin-top: 5px;
+}
+
+.signin a {
+  color: black;
+  text-decoration: none;
+}
+
+.signin a:hover {
+  text-decoration: underline;
+}
+
+.header2 {
+  width: 90%;
+  height: 100px;
+  /* border: 1px solid black; */
+  display: flex;
+  margin-left: 70px;
+  border: none;
+}
+
+.blacksection {
+  width: 90%;
+  height: 50px;
+  /* border: 1px solid black; */
+  margin-left: 70px;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  border: none;
+}
+
+
+.clothing-selector {
+  width: 150px;
+  height: 40px;
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 25px;
+  border: none;
+}
+
+
+.dropdown {
+  position: relative;
+  /* Make sure the container is relative */
+}
+
+
+.dropdown button {
+  padding: 6px 15px;
+  cursor: pointer;
+  /* border: 1px solid black; */
+  background-color: transparent;
+  color: black;
+  /* margin-top: 5px; */
+  border: none;
+}
+
+
+.material-symbols-outlined {
+  display: inline-block;
+}
+
+
+.buttontext {
+  display: flex;
+  /* Make the children display in a row */
+  align-items: normal;
+  /* Align children vertically centered */
+  margin-bottom: 40px;
+}
+
+
+.dropdown .needhelp:hover .material-symbols-outlined {
+  transform: rotate(180deg);
+}
+
+
+.dropdown .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 300px;
+  min-height: 100px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  top: 50%;
+  /* Position dropdown content just below the button */
+  left: 0;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+.dropdown p {
+  padding: 10px;
+  margin: 0;
+  font-size: small;
+  line-height: 10px;
+}
+
+
+
+#clothing-selector {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+}
+
+
+#clothing-selector nav {
+  margin: 0 10px;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  color: #fff;
+  background-color: #555;
+  border: none;
+}
+
+
+.clothing-section {
+  display: none;
+  padding: 20px;
+}
+
+
+.clothing-section p {
+  font-size: 18px;
+  color: #333;
+  margin: 0;
+}
+
+.newarrivalsection {
+  padding: 10px;
+  /* Adjust the padding as needed */
+  /* background-color: #555; */
+  color: #fff;
+  width: 500px;
+  height: 30px;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+  /* border: 2px solid black; */
+  background-image: url(../Project/page-2/logo.jpeg);
+  background-size: cover;
+}
+
+
+nav {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+
+nav a {
+  text-decoration: none;
+  color: white;
+  padding: 10px 20px;
+  display: inline-block;
+}
+
+
+nav a:hover {
+  /* background-color: #555; */
+}
+
+
+section {
+  padding: 20px;
+}
+
+.logocontent {
+  width: 100%;
+  height: 100px;
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  margin-bottom: 15px;
+}
+
+.searchwishlist {
+  width: 320px;
+  height: 40px;
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.search {
+  width: 90px;
+  height: 30px;
+  /* border: 2px solid black; */
+  display: flex;
+}
+
+.wishtlist {
+  width: 90px;
+  height: 30px;
+  /* border: 1px solid black; */
+  color: black;
+}
+
+.wish {
+  width: 120px;
+}
+
+.wishtlist:hover {
+  text-decoration: underline;
+}
+
+.mybag {
+  width: 90px;
+  height: 30px;
+  /* border: 1px solid black; */
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  /* border: 1px solid black; */
+}
+
+
+.wish {
+  color: black;
+  /* Link color */
+  text-decoration: none;
+  /* Remove default underline */
+  /* font-weight: bold; Make the text bold */
+}
+
+
+.menlink:focus,
+.womenlink:focus {
+  text-decoration: underline;
+  outline: none;
+  /* Remove the default focus outline */
+}
+
+
+.menlink,
+.womenlink {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.dropdownnav {
+  width: 90%;
+  height: 55px;
+  /* border: 1px solid rgb(0, 183, 255); */
+  margin-left: 70px;
+  padding-top: 2px;
+  margin-bottom: 5px;
+  /* position: absolute; */
+}
+
+.navbar li {
+  list-style-type: none;
+}
+
+.navbar li a {
+  text-decoration: none;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: end;
+}
+
+.navbar li a:hover {
+  text-decoration: underline;
+}
+
+.content {
+  width: 80%;
+  height: auto;
+  background-color: white;
+  /* border: 1px solid black; */
+  border: none;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px;
+  position: absolute;
+  transform: translate(0%);
+  visibility: hidden;
+  opacity: 0;
+  top: 0rem;
+  margin-top: -128px;
+  line-height: 40px;
+  border-radius: 5px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.content>div {
+  /* border: 1px solid black; */
+  /* border: none; */
+
+}
+
+
+
+
+.alphabets {
+  /* border: 1px solid black; */
+}
+
+/* .navbar:hover + .content{
+        visibility: visible;
+        opacity: 1;
+        top: 11rem;
+    } */
+.cat1:hover>.content {
+  visibility: visible;
+  opacity: 1;
+  top: 11rem;
+}
+
+.content1 {
+  width: 70%;
+  height: auto;
+  background-color: white;
+  /* border: 1px solid black; */
+  border: none;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px;
+  position: absolute;
+  transform: translate(0%);
+  visibility: hidden;
+  opacity: 0;
+  top: 10rem;
+  line-height: 40px;
+  border-radius: 5px;
+}
+
+.groupimage1 {
+  width: 90%;
+  height: auto;
+  /* border: 1px solid black; */
+  display: grid;
+  grid-template-columns: repeat(1, 4fr);
+  margin-left: 70px;
+  gap: 20px;
+}
+
+.groupimage>div {
+  /* border: 1px solid black; */
+}
+
+.groupimage>div:nth-child(1) {
+  /* width: 5opx; */
+  /* margin-left: 90px; */
+  margin-top: 10px;
+}
+
+.groupimage2 {
+  width: 90%;
+  height: auto;
+  /* border: 1px solid black; */
+  display: grid;
+  grid-template-columns: repeat(3, 2fr);
+  margin-left: 70px;
+  gap: 10px;
+}
+
+.groupimage2>div {
+  /* border: 1px solid black; */
+}
+
+img {
+  width: 430px;
+}
+
+.content1>div:nth-child(1) {
+  background-image: url(https://is4.fwrdassets.com/images/up/2024/January/111624_FW_NAV_designers1_1x_r.jpg);
+  background-size: cover;
+}
+
+.content1>div:nth-child(2) {
+  background-image: url(https://is4.fwrdassets.com/images/up/2024/February/020224_fw_khaite_3xpts_200x279.jpg);
+  background-size: cover;
+}
+
+.productHeading {
+  width: 90%;
+  height: 50px;
+  /* border: 1px solid black; */
+  margin-left: 70px;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.productitems {
+  width: 90%;
+  height: auto;
+  /* border: 1px solid black; */
+  margin-left: 70px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.productimg1 {
+  width: 100%;
+  height: 500px;
+  /* border: 1px solid black; */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.productimg1>div {
+  /* border: 1px solid black; */
+
+
+}
+
+.shoesimg {
+  width: 100%;
+  height: 400px;
+  /* border: 1px solid black; */
+  background-image: url(https://is4.fwrdassets.com/images/p/fw/z/MMAR-WZ175_V1.jpg);
+  background-size: cover;
+}
+
+.shoesimg:hover {
+  background-image: url(https://is4.fwrdassets.com/images/p/fw/z/MMAR-WZ175_V2.jpg);
+  background-size: cover;
+}
+
+.shoescontent {
+  text-align: center;
+  line-height: 10px;
+  font-size: small;
+}
+
+.girlfirstimg {
+  width: 100%;
+  height: 400px;
+  /* border: 1px solid black; */
+  background-image: url(https://is4.fwrdassets.com/images/p/fw/p/VSAC-WS198_V4.jpg);
+  background-size: cover;
+}
+
+.girlfirstimg:hover {
+  background-image: url(https://is4.fwrdassets.com/images/p/fw/z/VSAC-WS198_V1.jpg);
+  background-size: cover;
+}
+
+.sandleimg {
+  width: 100%;
+  height: 400px;
+  /* border: 1px solid black; */
+  background-image: url(https://is4.fwrdassets.com/images/p/fw/z/AMUD-WZ138_V1.jpg);
+  background-size: cover;
+}
+
+.sandleimg:hover {
+  background-image: url(https://is4.fwrdassets.com/images/p/fw/z/AMUD-WZ138_V2.jpg);
+  background-size: cover;
+}
+
+.secondgirlimg {
+  width: 100%;
+  height: 400px;
+  /* border: 1px solid black; */
+  background-image: url(https://is4.fwrdassets.com/images/p/fw/z/ACNE-WS499_V1.jpg);
+  background-size: cover;
+}
+
+.secondgirlimg:hover {
+  background-image: url(https://is4.fwrdassets.com/images/p/fw/z/ACNE-WS499_V4.jpg);
+  background-size: cover;
+}
+
+.bagimg {
+  width: 100%;
+  height: 400px;
+  /* border: 1px solid black; */
+  background-image: url(https://is4.fwrdassets.com/images/p/fw/45/LOEW-WY790_V1.jpg);
+  background-size: cover;
+}
+
+.bagimg:hover {
+  background-image: url(https://is4.fwrdassets.com/images/p/fw/45/LOEW-WY790_V2.jpg);
+  background-size: cover;
+}
+
+.bag2img {
+  width: 100%;
+  height: 400px;
+  /* border: 1px solid black; */
+  background-image: url(https://is4.fwrdassets.com/images/p/fw/45/LOEW-WY804_V1.jpg);
+  background-size: cover;
+}
+
+.bag2img:hover {
+  background-image: url(https://is4.fwrdassets.com/images/p/fw/45/LOEW-WY804_V2.jpg);
+  background-size: cover;
+}
+
+.bag3img {
+  width: 100%;
+  height: 400px;
+  /* border: 1px solid black; */
+  background-image: url(https://is4.fwrdassets.com/images/p/fw/45/LOEW-WY803_V1.jpg);
+  background-size: cover;
+}
+
+.bag3img:hover {
+  background-image: url(https://is4.fwrdassets.com/images/p/fw/45/LOEW-WY803_V2.jpg);
+  background-size: cover;
+}
+
+.bag4img {
+  width: 100%;
+  height: 400px;
+  /* border: 1px solid black; */
+  background-image: url(https://is4.fwrdassets.com/images/p/fw/45/LOEW-WY670_V1.jpg);
+  background-size: cover;
+}
+
+.bag4img:hover {
+  background-image: url(https://is4.fwrdassets.com/images/p/fw/45/LOEW-WY670_V2.jpg);
+  background-size: cover;
+}
+
+/* .headingfoot {
+  width: 800px;
+  height: 150px;
+  border: 1px solid black;
+  margin-left: 30px;
+
+}
+
+.footheading {
+  height: 150px;
+  width: 90%;
+  border: 1px solid black;
+  margin-left: 70px;
+  margin-top: 70px;
+  background-color: #e3d4d0;
+  display: flex;
+ 
+} */
+
+
+
+/* .applestore {
+  position: relative;
+ 
+}
+
+
+.applestore img {
+  width: 100px;
+  height: 50px;
+  transform: translateX(300px);
+  margin-top: 50px;
+  transition: filter 0.3s ease;
+  color: inherit;
+}
+
+
+.applestore img:hover {
+  filter: brightness(0.7);
+} */
+
+.footheading2 {
+  width: 100%;
+  height: 50px;
+  /* border: 1px solid black; */
+  background-color: #e3d4d0;
+  margin-top: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.footheading2 p {
+  margin-left: 20px;
+
+
+}
+
+.footheading2 span {
+  margin-left: 20px;
+  text-decoration: underline;
+
+}
+
+.mainfootcontent {
+  width: 100%;
+  /* border: 1px solid black; */
+  margin-top: 20px;
+}
+
+.contentfoot {
+  width: 90%;
+  /* border: 1px solid black; */
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  margin-left: 70px;
+
+
+}
+
+.contentfoot>div {
+  /* border: 1px solid black; */
+}
+
+.contentfoot>div a {
+  line-height: 30px;
+  font-size: small;
+  color: black;
+  text-decoration: none;
+
+}
+
+.contentfoot>div a:hover {
+  text-decoration: underline;
+}
+
+.crosstickimg {
+  width: 20px;
+  height: 30px;
+  margin-left: 30px;
+
+}
+
+.specialelementfoot {
+  width: 200px;
+  height: 20px;
+  /* border: 1px solid black; */
+  display: flex;
+  flex-wrap: wrap;
+  border: none;
+}
+
+textarea {
+  width: 500px;
+  height: 50px;
+  padding: 8px;
+  box-sizing: border-box;
+  border: 1px solid #961c1c;
+  display: flex;
+  position: relative;
+
+}
+
+.footcopyright {
+  margin-left: 65px;
+  color: #827f7f;
+}
+
+#gridcards {
+  transition: filter 0.3s ease;
+}
+
+#gridcards:hover {
+  filter: brightness(0.7);
+}
+
+#gridcardcontent h5 {
+  /* margin-left: 100px; */
+  width: 300px;
+  border: 1px solid black;
+  margin-left: 70px;
+  text-align: center;
+  transition: filter 0.3s ease;
+}
+
+#gridcardcontent p {
+  width: 400px;
+  ;
+  border: 1px solid black;
+  /* margin-left: 10px; */
+  white-space: pre-wrap;
+  text-indent: 20px;
+  text-align: center;
+  transition: filter 0.3s ease;
+
+
+}
+
+#gridcardcontent:hover {
+  filter: brightness(0.7);
+}
+
+#gridcardcontent {
+  transition: filter 0.3s ease;
+
+}
+
+.shoesmenimg {
+  width: 100%;
+  height: 400px;
+  border: 1px solid black;
+  background-image: url(https://is4.fwrdassets.com/images/p/fw/z/AMCQ-MZ93_V1.jpg);
+  background-size: cover;
+}
+
+.shoesmenimg:hover {
+  background-image: url(https://is4.fwrdassets.com/images/p/fw/z/AMCQ-MZ93_V2.jpg);
+  background-size: cover;
+}
+
+.jeansimg {
+  width: 100%;
+  height: 400px;
+  border: 1px solid black;
+  background-image: url(https://is4.fwrdassets.com/images/p/fw/z/AMIF-MJ197_V1.jpg);
+  background-size: cover;
+}
+
+.jeansimg:hover {
+  background-image: url(https://is4.fwrdassets.com/images/p/fw/z/AMIF-MJ197_V4.jpg);
+  background-size: cover;
+}
+
+.shoes3img {
+  width: 100%;
+  height: 400px;
+  border: 1px solid black;
+  background-image: url(https://is4.fwrdassets.com/images/p/fw/z/AMIF-MZ196_V1.jpg);
+  background-size: cover;
+}
+
+.shoes3img:hover {
+  background-image: url(https://is4.fwrdassets.com/images/p/fw/z/AMIF-MZ196_V2.jpg);
+  background-size: cover;
+}
+
+.shoes4img {
+  width: 100%;
+  height: 400px;
+  border: 1px solid black;
+  background-image: url(https://is4.fwrdassets.com/images/p/fw/z/AMIF-MZ207_V1.jpg);
+  background-size: cover;
+}
+
+.shoes4img:hover {
+  background-image: url(https://is4.fwrdassets.com/images/p/fw/z/AMIF-MZ207_V2.jpg);
+  background-size: cover;
+}
+
+.sweaterimg {
+  width: 100%;
+  height: 400px;
+  border: 1px solid black;
+  background-image: url(https://is4.fwrdassets.com/images/p/fw/z/TMBX-MK146_V1.jpg);
+  background-size: cover;
+}
+
+.sweaterimg:hover {
+  background-image: url(https://is4.fwrdassets.com/images/p/fw/z/TMBX-MK146_V4.jpg);
+  background-size: cover;
+}
+
+.shoes5img {
+  width: 100%;
+  height: 400px;
+  border: 1px solid black;
+  background-image: url(https://is4.fwrdassets.com/images/p/fw/z/AMIF-MZ199_V1.jpg);
+  background-size: cover;
+}
+
+.shoes5img:hover {
+  background-image: url(https://is4.fwrdassets.com/images/p/fw/z/AMIF-MZ199_V2.jpg);
+  background-size: cover;
+}
+
+.shoes6img {
+  width: 100%;
+  height: 400px;
+  border: 1px solid black;
+  background-image: url(https://is4.fwrdassets.com/images/p/fw/z/AMIF-MZ203_V1.jpg);
+  background-size: cover;
+}
+
+.shoes6img:hover {
+  background-image: url(https://is4.fwrdassets.com/images/p/fw/z/AMIF-MZ203_V2.jpg);
+  background-size: cover;
+}
+
+.tshirtimg {
+  width: 100%;
+  height: 400px;
+  border: 1px solid black;
+  background-image: url(https://is4.fwrdassets.com/images/p/fw/z/BURF-MS110_V1.jpg);
+  background-size: cover;
+}
+
+.tshirtimg:hover {
+  background-image: url(https://is4.fwrdassets.com/images/p/fw/z/BURF-MS110_V3.jpg);
+  background-size: cover;
+}
+
+
+#navimag:hover {
+  filter: brightness(0.7);
+}
+
+#navimag {
+  transition: filter 0.3s ease;
+
+}
+
+
 /* body {
     margin: 0px;
     padding: 0px;
@@ -156,11 +1062,12 @@
   margin-right: 20px;
 }
 
+/* 
 #content {
   max-height: 100px;
   overflow: hidden;
   transition: max-height 0.3s ease;
-}
+} */
 
 .v-viewed {
   width: 100%;
@@ -302,11 +1209,11 @@ a {
     text-decoration: underline;
 } */
 
-#details1 > ul > li {
+#details1>ul>li {
   font-size: 14px;
 }
 
-#details3 > p {
+#details3>p {
   font-size: 14px;
 }
 
