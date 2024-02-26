@@ -180,6 +180,7 @@ document
   .querySelector(".btn-outline-dark")
   .addEventListener("click", addToCart);
 function addToCart() {
+  product.quantity = 1;
   cart.push(product);
   localStorage.setItem("cart", JSON.stringify(cart));
   cartValues();
