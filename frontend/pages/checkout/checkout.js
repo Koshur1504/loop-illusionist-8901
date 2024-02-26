@@ -11,7 +11,7 @@ let prices = document.querySelector(".price2 > p:nth-of-type(1)");
 let shipping = document.querySelector(".price2 > p:nth-of-type(2)");
 let total = document.querySelector(".price2 > p:nth-of-type(3)");
 let cartDiv = document.querySelector("#cartDiv");
-
+let items = document.querySelector("#box ~ p");
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
 submit.addEventListener("submit", async (e) => {
@@ -51,9 +51,16 @@ function getTotal() {
   }, 0);
 }
 
-prices.innerText = `₹${getTotal()}`;
-shipping.innerText = `₹${Math.ceil((getTotal() * 0.6) / 100)}`;
-total.innerText = `₹${getTotal() + Math.ceil((getTotal() * 0.6) / 100)}`;
+if (cart.length == 0) {
+  prices.innerText = `₹0`;
+  shipping.innerText = `₹0`;
+  total.innerText = `₹0`;
+} else {
+  prices.innerText = `₹${getTotal()}`;
+  shipping.innerText = `₹${Math.ceil((getTotal() * 0.6) / 100)}`;
+  total.innerText = `₹${getTotal() + Math.ceil((getTotal() * 0.6) / 100)}`;
+}
+items.innerText = `Items in Your Order (${cart.length})`;
 
 function renderCards() {
   cartDiv.innerHTML = "";
