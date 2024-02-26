@@ -1,3 +1,10 @@
+* {
+  font-family: Montserrat, Arial, sans-serif;
+  /* color:black; */
+}
+.cat1 a{
+  color:black;
+}
 #mainbox {
   width: 100%;
   height: auto;
