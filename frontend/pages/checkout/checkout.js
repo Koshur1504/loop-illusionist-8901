@@ -13,6 +13,7 @@ let total = document.querySelector(".price2 > p:nth-of-type(3)");
 let cartDiv = document.querySelector("#cartDiv");
 let items = document.querySelector("#box ~ p");
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
+let user = JSON.parse(localStorage.getItem("user")) || { id: 501 };
 
 submit.addEventListener("submit", async (e) => {
   e.preventDefault();
@@ -28,13 +29,16 @@ submit.addEventListener("submit", async (e) => {
     },
   };
   try {
-    let data = await fetch(`https://loop-illusionist-8901.onrender.com/users`, {
-      method: "PATCH",
-      headers: {
-        "Content-type": "application/json",
+    let data = await fetch(
+      `https://loop-illusionist-8901.onrender.com/users/${user.id}`,
+      {
+        method: "PATCH",
+        headers: {
+          "Content-type": "application/json",
+        },
+        body: JSON.stringify(obj),
       },
-      body: JSON.stringify(obj),
-    });
+    );
     let res = await data.json();
     localStorage.setItem("user", JSON.stringify(res));
     window.location.href = "../payment/payment.html";
