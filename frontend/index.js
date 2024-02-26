@@ -9,7 +9,24 @@ let cards_2 = document.querySelectorAll(".groupimage2");
 let cartElement = document.querySelector(".mybag > .bag");
 let groupimages1 = document.querySelectorAll(".groupimages1");
 let wishListElement = document.querySelector(".wishtlist > .wish");
+let signin = document.querySelector(".shiipinglist >.signin");
+let signInContainer = document.querySelector(".shiipinglist");
 
+let user = JSON.parse(localStorage.getItem("user"));
+
+function checkUser() {
+  if (user) {
+    signin.remove();
+    if (user.role == "admin") {
+      let adminButton = document.createElement("li");
+      adminButton.classList.add("signin");
+      adminButton.innerHTML = `<a href="pages/admin/admin.html">Admin Panel</a>`;
+      signInContainer.append(adminButton);
+    }
+  }
+}
+
+checkUser();
 let gender = "female";
 function appendLinks() {
   // categories links
