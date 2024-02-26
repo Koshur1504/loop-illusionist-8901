@@ -9,13 +9,11 @@
 
 1- Aamir Mir ft30_165
 
-2- Pranoti Kadam
+2- Pranoti Kadam fw29_155
 
-3- Vibha Mauriya
+3- Vibha Mauriya fw29_049
 
-4- Himanshu Jaiswal
-
-5- Madhu Mishra
+4- Madhu Mishra fw29_100
 
 <hr>
 
