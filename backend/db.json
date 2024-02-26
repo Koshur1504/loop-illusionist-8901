@@ -12795,6 +12795,13 @@
         "city": "Lecheng",
         "country": "China"
       }
+    },
+    {
+      "email": "admin@mail.com",
+      "password": "$2a$10$RYraxE8wUIHigOvQ664/ve1RRLscTC2gbNsgOfam9Fm0BsUGDiYJe",
+      "name": "admin",
+      "role": "admin",
+      "id": 501
     }
   ],
   "orders": [
