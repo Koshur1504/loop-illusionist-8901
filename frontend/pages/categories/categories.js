@@ -97,7 +97,8 @@ function createCard(item) {
   card.classList.add("card");
   let heartbox = document.createElement("div");
   heartbox.classList.add("heartbox");
-  heartbox.addEventListener("click", () => {
+  heartbox.addEventListener("click", (e) => {
+    e.stopPropagation()
     handleHeart(item);
   });
   heartbox.innerHTML = `<span class="material-symbols-outlined heart">
