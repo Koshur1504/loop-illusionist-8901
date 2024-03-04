@@ -22,6 +22,11 @@ function checkUser() {
       adminButton.classList.add("signin");
       adminButton.innerHTML = `<a href="pages/admin/admin.html">Admin Panel</a>`;
       signInContainer.append(adminButton);
+    } else {
+      let adminButton = document.createElement("li");
+      adminButton.classList.add("signin");
+      adminButton.innerHTML = `<a">${user.name}</a>`;
+      signInContainer.append(adminButton);
     }
   }
 }

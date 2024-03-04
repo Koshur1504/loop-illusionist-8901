@@ -1,53 +1,13 @@
-let submit = document.querySelector("#shippingForm");
-let fullName = document.querySelector("#fullName");
-let selectCountry = document.querySelector("#selectCountry");
-let address1 = document.querySelector("#address1");
-let address2 = document.querySelector("#address2");
-let postcode = document.querySelector("#postcode");
-let city = document.querySelector("#city");
-let state = document.querySelector("#state");
-let phone = document.querySelector("#phone");
 let prices = document.querySelector(".price2 > p:nth-of-type(1)");
 let shipping = document.querySelector(".price2 > p:nth-of-type(2)");
 let total = document.querySelector(".price2 > p:nth-of-type(3)");
 let cartDiv = document.querySelector("#cartDiv");
 let items = document.querySelector("#box ~ p");
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
-let user = JSON.parse(localStorage.getItem("user")) || { id: 501 };
-
 const isDevelopment = window.location.hostname.includes("127.0.0.1");
 let baseURL = isDevelopment
   ? "http://127.0.0.1:4000"
   : "https://loop-illusionist-8901.onrender.com";
-
-submit.addEventListener("submit", async (e) => {
-  e.preventDefault();
-  let obj = {
-    name: fullName.value,
-    Phone: +phone.value,
-    address: {
-      address_line: address1.value,
-      city: city.value,
-      state: state.value,
-      postcode: +postcode.value,
-      country: selectCountry.value,
-    },
-  };
-  try {
-    let data = await fetch(`${baseURL}/users/${user.id}`, {
-      method: "PATCH",
-      headers: {
-        "Content-type": "application/json",
-      },
-      body: JSON.stringify(obj),
-    });
-    let res = await data.json();
-    localStorage.setItem("user", JSON.stringify(res));
-    window.location.href = "../payment/payment.html";
-  } catch (error) {
-    console.log(error);
-  }
-});
 
 function getTotal() {
   return cart.reduce((prev, cur) => {
@@ -66,6 +26,7 @@ if (cart.length == 0) {
   shipping.innerText = `₹${Math.ceil((getTotal() * 0.6) / 100)}`;
   total.innerText = `₹${getTotal() + Math.ceil((getTotal() * 0.6) / 100)}`;
 }
+
 items.innerText = `Items in Your Order (${cart.length})`;
 
 function renderCards() {
@@ -102,4 +63,3 @@ function createCard(item) {
 }
 
 renderCards();
-

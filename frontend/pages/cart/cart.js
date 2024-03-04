@@ -4,6 +4,7 @@ let baseURL = isDevelopment
   : "https://loop-illusionist-8901-1.onrender.com";
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
 let wishList = JSON.parse(localStorage.getItem("wishList")) || [];
+let user = JSON.parse(localStorage.getItem("user"));
 let wish = document.querySelector(".wish");
 let cartEl = document.querySelector(".bag");
 
@@ -59,3 +60,25 @@ function getCarts() {
   wish.innerText = `Wish List (${wishList.length})`;
   cartEl.innerText = `My Bag (${cart.length})`;
 }
+
+let signin = document.querySelector(".signin");
+console.log(signin);
+let signInContainer = document.querySelector(".shiipinglist");
+function checkUser() {
+  if (user) {
+    signin.remove();
+    if (user.role == "admin") {
+      let adminButton = document.createElement("li");
+      adminButton.classList.add("signin");
+      adminButton.innerHTML = `<a href="../admin/admin.html">Admin Panel</a>`;
+      signInContainer.append(adminButton);
+    } else {
+      let adminButton = document.createElement("li");
+      adminButton.classList.add("signin");
+      adminButton.innerHTML = `<a">${user.name}</a>`;
+      signInContainer.append(adminButton);
+    }
+  }
+}
+
+checkUser();

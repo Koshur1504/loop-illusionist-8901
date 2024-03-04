@@ -12798,9 +12798,23 @@
     {
       "email": "admin@mail.com",
       "password": "$2a$10$RYraxE8wUIHigOvQ664/ve1RRLscTC2gbNsgOfam9Fm0BsUGDiYJe",
-      "name": "admin",
+      "name": "Aamir",
       "role": "admin",
-      "id": 501
+      "id": 501,
+      "Phone": 8825066619,
+      "address": {
+        "address_line": "Srinagar",
+        "city": "srinagar",
+        "state": "J&k",
+        "postcode": 190876,
+        "country": "India"
+      }
+    },
+    {
+      "email": "user@mail.com",
+      "password": "$2a$10$peEpxa3ed4rvVsYrbPOTz.puf7zIGl0V7G1/9BtGqxZ7LOukcBBkK",
+      "name": "user",
+      "id": 502
     }
   ],
   "orders": [
