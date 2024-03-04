@@ -13,7 +13,9 @@ let depURL = isDevelopment
 
 let params = new URL(document.location).searchParams;
 let paramID = params.get("id");
-
+let baseURL = isDevelopment
+  ? "http://127.0.0.1:4000/products"
+  : "https://loop-illusionist-8901.onrender.com";
 function rainderItems() {
   product_image.setAttribute("src", products.image);
   three_details.forEach((item) => {
@@ -87,7 +89,7 @@ let product = {
   gender: "female",
   category: "clothing",
 };
-let baseURL = "https://loop-illusionist-8901.onrender.com/products";
+
 let productID = paramID || 1;
 async function getProduct() {
   try {
@@ -229,3 +231,25 @@ cartElement.addEventListener("click", () => {
 wishListElement.addEventListener("click", () => {
   window.location.href = `${depURL}/pages/wishlist/wishlist.html`;
 });
+
+let user = JSON.parse(localStorage.getItem("user"));
+let signin = document.querySelector(".signin");
+let signInContainer = document.querySelector(".shiipinglist");
+function checkUser() {
+  if (user) {
+    signin.remove();
+    if (user.role == "admin") {
+      let adminButton = document.createElement("li");
+      adminButton.classList.add("signin");
+      adminButton.innerHTML = `<a href="../admin/admin.html">Admin Panel</a>`;
+      signInContainer.append(adminButton);
+    } else {
+      let adminButton = document.createElement("li");
+      adminButton.classList.add("signin");
+      adminButton.innerHTML = `<a">${user.name}</a>`;
+      signInContainer.append(adminButton);
+    }
+  }
+}
+
+checkUser();

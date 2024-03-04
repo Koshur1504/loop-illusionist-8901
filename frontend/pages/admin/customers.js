@@ -1,6 +1,10 @@
 let tableBody = document.getElementById("tablebody");
 let paginationWrapper = document.getElementById("pagination-wrapper");
-let customersUrl = "https://loop-illusionist-8901.onrender.com/users";
+// let customersUrl = "https://loop-illusionist-8901.onrender.com/users";
+const isDevelopment = window.location.hostname.includes("127.0.0.1");
+let customersUrl = isDevelopment
+  ? "http://127.0.0.1:4000/users"
+  : "https://loop-illusionist-8901.onrender.com/users";
 
 async function fetchData(customersUrl, queryParams = "") { 
     try {

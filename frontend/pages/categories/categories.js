@@ -2,10 +2,14 @@ const isDevelopment = window.location.hostname.includes("127.0.0.1");
 let baseURL = isDevelopment
   ? "http://127.0.0.1:5500/frontend"
   : "https://loop-illusionist-8901-1.onrender.com";
-let apiBaseURL = `https://loop-illusionist-8901.onrender.com`;
+
+let apiBaseURL = isDevelopment
+  ? "http://127.0.0.1:4000"
+  : "https://loop-illusionist-8901.onrender.com";
 let cat_links = document.querySelectorAll(".dropdownnav > ul > li > a");
 let productcardSection = document.querySelector(".productcardSection");
 let wishList = JSON.parse(localStorage.getItem("wishList")) || [];
+let user = JSON.parse(localStorage.getItem("user"));
 
 let page = 1;
 let limit = 10;
@@ -98,7 +102,7 @@ function createCard(item) {
   let heartbox = document.createElement("div");
   heartbox.classList.add("heartbox");
   heartbox.addEventListener("click", (e) => {
-    e.stopPropagation()
+    e.stopPropagation();
     handleHeart(item);
   });
   heartbox.innerHTML = `<span class="material-symbols-outlined heart">
@@ -157,3 +161,25 @@ async function getData(filterParams) {
 }
 
 getData(basicFilter);
+
+let signin = document.querySelector(".signinpage");
+console.log(signin);
+let signInContainer = document.querySelector(".shiplist");
+function checkUser() {
+  if (user) {
+    signin.remove();
+    if (user.role == "admin") {
+      let adminButton = document.createElement("li");
+      adminButton.classList.add("signin");
+      adminButton.innerHTML = `<a href="..//admin/admin.html">Admin Panel</a>`;
+      signInContainer.append(adminButton);
+    } else {
+      let adminButton = document.createElement("li");
+      adminButton.classList.add("signin");
+      adminButton.innerHTML = `<a">${user.name}</a>`;
+      signInContainer.append(adminButton);
+    }
+  }
+}
+
+checkUser();

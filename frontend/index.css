@@ -2,8 +2,8 @@
   font-family: Montserrat, Arial, sans-serif;
   /* color:black; */
 }
-.cat1 a{
-  color:black;
+.cat1 a {
+  color: black;
 }
 #mainbox {
   width: 100%;
@@ -774,4 +774,15 @@ textarea {
 }
 .bag:hover {
   text-decoration: underline;
+}
+a {
+  color: black;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+#arrow{
+  position: relative;
+  top: -4px;
 }
