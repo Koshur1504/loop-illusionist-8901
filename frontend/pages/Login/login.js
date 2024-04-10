@@ -75,7 +75,7 @@ async function handleSignin(e) {
     console.log(error);
   }
 }
-console.log(window.location.href);
+
 // signUp
 signUpBtn.addEventListener("click", (e) => {
   handleSignup(e);
