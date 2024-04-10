@@ -1,6 +1,12 @@
 let tableBody = document.getElementById("tablebody");
 let paginationWrapper = document.getElementById("pagination-wrapper");
 // let productsUrl = "https://loop-illusionist-8901.onrender.com/products";
+let logout = document.querySelector(".logout");
+
+logout.addEventListener("click", () => {
+  localStorage.clear();
+});
+
 const isDevelopment = window.location.hostname.includes("127.0.0.1");
 let productsUrl = isDevelopment
   ? "http://127.0.0.1:4000/products"

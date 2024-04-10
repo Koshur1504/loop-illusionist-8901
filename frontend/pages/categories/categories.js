@@ -1,11 +1,13 @@
 const isDevelopment = window.location.hostname.includes("127.0.0.1");
+
 let baseURL = isDevelopment
   ? "http://127.0.0.1:5500/frontend"
   : "https://loop-illusionist-8901-1.onrender.com";
 
-let apiBaseURL = isDevelopment
-  ? "http://127.0.0.1:4000"
-  : "https://loop-illusionist-8901.onrender.com";
+let apiBaseURL = "https://loop-illusionist-8901.onrender.com";
+
+console.log(isDevelopment);
+
 let cat_links = document.querySelectorAll(".dropdownnav > ul > li > a");
 let productcardSection = document.querySelector(".productcardSection");
 let wishList = JSON.parse(localStorage.getItem("wishList")) || [];
@@ -163,7 +165,7 @@ async function getData(filterParams) {
 getData(basicFilter);
 
 let signin = document.querySelector(".signinpage");
-console.log(signin);
+
 let signInContainer = document.querySelector(".shiplist");
 function checkUser() {
   if (user) {
