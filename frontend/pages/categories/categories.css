@@ -317,7 +317,8 @@
 .card-image {
   width: 100%;
   height: 550px;
-  object-fit: cover;
+  object-fit: contain;
+  object-position: center;
 }
 .heart {
   padding: 8px;

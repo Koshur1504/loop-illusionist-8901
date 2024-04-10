@@ -1,4 +1,5 @@
-// let baseurl = "https://loop-illusionist-8901.onrender.co";
+
+
 let signInBtn = document.querySelector("#signInBtn");
 let signUpBtn = document.querySelector("#signUpBtn");
 let customAlert = document.getElementById("customAlert");
@@ -7,9 +8,7 @@ let customAlertName = document.getElementById("customAlertName");
 let customAlertemail = document.getElementById("customAlertemail");
 let customAlertpassword = document.getElementById("customAlertpassword");
 const isDevelopment = window.location.hostname.includes("127.0.0.1");
-let baseurl = isDevelopment
-  ? "http://127.0.0.1:4000"
-  : "https://loop-illusionist-8901.onrender.com";
+let baseurl = "https://loop-illusionist-8901.onrender.com";
 
 // signIn
 signInBtn.addEventListener("click", (e) => {

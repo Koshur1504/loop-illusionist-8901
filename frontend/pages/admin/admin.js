@@ -2,6 +2,12 @@ const isDevelopment = window.location.hostname.includes("127.0.0.1");
 let apiBaseURL = isDevelopment
   ? "http://127.0.0.1:4000"
   : "https://loop-illusionist-8901.onrender.com";
+
+let logout = document.querySelector(".logout");
+
+logout.addEventListener("click", () => {
+  localStorage.clear();
+});
 async function TotalOrders() {
   try {
     let res = await fetch(`${apiBaseURL}/orders`);
