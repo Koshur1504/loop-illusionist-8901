@@ -14,9 +14,8 @@ let depURL = isDevelopment
 
 let params = new URL(document.location).searchParams;
 let paramID = params.get("id");
-let baseURL = isDevelopment
-  ? "http://127.0.0.1:4000/products"
-  : "https://loop-illusionist-8901.onrender.com";
+let baseURL = "https://loop-illusionist-8901.onrender.com";
+
 function rainderItems() {
   product_image.setAttribute("src", products.image);
   three_details.forEach((item) => {
@@ -94,7 +93,7 @@ let product = {
 let productID = paramID || 1;
 async function getProduct() {
   try {
-    let url = `${baseURL}/${productID}`;
+    let url = `${baseURL}/products/${productID}`;
     let data = await fetch(url);
     product = await data.json();
     setProductsDetails();
