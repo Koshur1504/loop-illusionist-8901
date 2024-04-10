@@ -1,7 +1,7 @@
 const isDevelopment = window.location.hostname.includes("127.0.0.1");
 let baseURL = isDevelopment
   ? "http://127.0.0.1:5500/frontend"
-  : "https://loop-illusionist-8901-1.onrender.com";
+  : "https://loop-illusionist-8901.vercel.app";
 
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
 let wishList = JSON.parse(localStorage.getItem("wishList")) || [];
